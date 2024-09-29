@@ -38,6 +38,7 @@ keywords = [
 ]
 dependencies = [
     "sphinx>=4",
+    "wcmatch==8.5"
 ]
 
 [project.urls]

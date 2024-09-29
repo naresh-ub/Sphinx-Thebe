@@ -4,10 +4,14 @@ import json
 import os
 from pathlib import Path
 from textwrap import dedent
+from typing import Optional
 
-from docutils.parsers.rst import Directive, directives
+from docutils.parsers.rst import Directive
 from docutils import nodes
 from sphinx.util import logging
+import shutil
+
+from wcmatch import glob
 
 from ._version import version as __version__
 
@@ -15,10 +19,19 @@ logger = logging.getLogger(__name__)
 
 THEBE_VERSION = "0.8.2"
 
+SPHINX_THEBE_PRIORITY = 500
+THEBE_CONFIG_PRIORITY = 490
+
 
 def st_static_path(app):
     static_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "_static"))
     app.config.html_static_path.append(static_path)
+
+    if app.config.thebe_config.get("use_thebe_lite", False):
+        thebe_static_path = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), "_thebe_static")
+        )
+        app.config.html_static_path.append(thebe_static_path)
 
 
 def init_thebe_default_config(app, env, docnames):
@@ -29,13 +42,15 @@ def init_thebe_default_config(app, env, docnames):
         "selector": ".thebe,.cell",
         "selector_input": "pre",
         "selector_output": ".output, .cell_output",
+        "use_thebe_lite": False,
+        "exclude_patterns": [],
     }
     for key, val in defaults.items():
         if key not in thebe_config:
             thebe_config[key] = val
 
     # Standardize types for certain values
-    BOOL_KEYS = ["always_load"]
+    BOOL_KEYS = ["always_load", "use_thebe_lite"]
     for key in BOOL_KEYS:
         thebe_config[key] = _bool(thebe_config[key])
 
@@ -71,20 +86,36 @@ def init_thebe_core(app, env, docnames):
     """
     config_thebe = app.config["thebe_config"]
 
-    # Add configuration variables
-    THEBE_JS_URL = f"https://unpkg.com/thebe@{THEBE_VERSION}/lib/index.js"
-    thebe_config = f"""\
-        const THEBE_JS_URL = "{ THEBE_JS_URL }"
-        const thebe_selector = "{ app.config.thebe_config['selector'] }"
-        const thebe_selector_input = "{ app.config.thebe_config['selector_input'] }"
-        const thebe_selector_output = "{ app.config.thebe_config['selector_output'] }"
-    """
-    app.add_js_file(None, body=dedent(thebe_config))
-    app.add_js_file(filename="sphinx-thebe.js", **{"async": "async"})
+    app.add_js_file(filename="refresh.js", loading_method="defer")
 
-    if config_thebe.get("always_load") is True:
-        # If we've got `always load` on, then load thebe on every page.
-        app.add_js_file(THEBE_JS_URL, **{"async": "async"})
+    if not config_thebe.get("use_thebe_lite", False):
+        # Add configuration variables
+        THEBE_JS_URL = f"https://unpkg.com/thebe@{THEBE_VERSION}/lib/index.js"
+        thebe_config = f"""\
+            const THEBE_JS_URL = "{ THEBE_JS_URL }"
+            const thebe_selector = "{ app.config.thebe_config['selector'] }"
+            const thebe_selector_input = "{ app.config.thebe_config['selector_input'] }"
+            const thebe_selector_output = "{ app.config.thebe_config['selector_output'] }"
+        """
+        app.add_js_file(None, body=dedent(thebe_config))
+        app.add_js_file(filename="sphinx-thebe.js", **{"async": "async"})
+
+        if config_thebe.get("always_load") is True:
+            # If we've got `always load` on, then load thebe on every page.
+            app.add_js_file(THEBE_JS_URL, **{"async": "async"})
+    else:
+        logger.info("[sphinx-thebe]: Using thebe-lite")
+        thebe_config = f"""\
+            const thebe_selector = "{ app.config.thebe_config['selector'] }"
+            const thebe_selector_input = "{ app.config.thebe_config['selector_input'] }"
+            const thebe_selector_output = "{ app.config.thebe_config['selector_output'] }"
+        """
+        app.add_js_file(None, body=dedent(thebe_config))
+        app.add_js_file(
+            filename="sphinx-thebe-lite.js",
+            loading_method="defer",
+            priority=SPHINX_THEBE_PRIORITY,
+        )
 
 
 def update_thebe_context(app, doctree, docname):
@@ -101,7 +132,7 @@ def update_thebe_context(app, doctree, docname):
         raise ValueError(
             "thebe configuration must be `True` or a dictionary for configuration."
         )
-    codemirror_theme = config_thebe.get("codemirror-theme", "abcdef")
+    codemirror_theme = config_thebe.get("codemirror-theme", "default")
 
     # Choose the kernel we'll use
     meta = app.env.metadata.get(docname, {})
@@ -122,36 +153,64 @@ def update_thebe_context(app, doctree, docname):
     elif cm_language == "ir":
         cm_language = "r"
 
-    # Create the URL for the kernel request
-    repo_url = config_thebe.get(
-        "repository_url",
-        "https://github.com/binder-examples/jupyter-stacks-datascience",
-    )
-    branch = config_thebe.get("repository_branch", "master")
-    path_to_docs = config_thebe.get("path_to_docs", ".").strip("/") + "/"
-    org, repo = _split_repo_url(repo_url)
+    if config_thebe.get("use_thebe_lite", False):
+        # If we're using thebe-lite, we populate a different configuration
 
-    # Update the doctree with some nodes for the thebe configuration
-    thebe_html_config = f"""
-    <script type="text/x-thebe-config">
-    {{
-        requestKernel: true,
-        binderOptions: {{
-            repo: "{org}/{repo}",
-            ref: "{branch}",
-        }},
-        codeMirrorConfig: {{
-            theme: "{codemirror_theme}",
-            mode: "{cm_language}"
-        }},
-        kernelOptions: {{
-            name: "{kernel_name}",
-            path: "{path_to_docs}{str(Path(docname).parent)}"
-        }},
-        predefinedOutput: true
-    }}
-    </script>
-    """
+        # Count the number of slashes, and create a path prefix. If we're
+        # in a subdirectory, we need to go up a level for the root path.
+        # If we are already at the root, we don't need to go up a level, but still
+        # need to add a "./"
+        root_path = "/".join([".."] * docname.count("/")) or "./"
+        thebe_html_config = f"""
+        <script type="text/x-thebe-config">
+        {{
+            "rootPath": "{root_path}",
+            "requestKernel": true,
+            "useJupyterLite": true,
+            "useBinder": false,
+            "kernelOptions": {{
+                "path": "/"
+            }},
+            "codeMirrorConfig": {{
+                "theme": "{codemirror_theme}",
+                "mode": "{cm_language}"
+            }},
+            "mountRestartButton": false,
+            "mountRestartallButton": false
+        }}
+        </script>
+        """
+    else:
+        # Create the URL for the kernel request
+        repo_url = config_thebe.get(
+            "repository_url",
+            "https://github.com/binder-examples/jupyter-stacks-datascience",
+        )
+        branch = config_thebe.get("repository_branch", "master")
+        path_to_docs = config_thebe.get("path_to_docs", ".").strip("/") + "/"
+        org, repo = _split_repo_url(repo_url)
+
+        # Update the doctree with some nodes for the thebe configuration
+        thebe_html_config = f"""
+        <script type="text/x-thebe-config">
+        {{
+            requestKernel: true,
+            binderOptions: {{
+                repo: "{org}/{repo}",
+                ref: "{branch}",
+            }},
+            codeMirrorConfig: {{
+                theme: "{codemirror_theme}",
+                mode: "{cm_language}"
+            }},
+            kernelOptions: {{
+                name: "{kernel_name}",
+                path: "{path_to_docs}{str(Path(docname).parent)}"
+            }},
+            predefinedOutput: true
+        }}
+        </script>
+        """
 
     # Append to the docutils doctree so it makes it into the build outputs
     doctree.append(nodes.raw(text=thebe_html_config, format="html"))
@@ -226,6 +285,69 @@ def skip(self, node):
     raise nodes.SkipNode
 
 
+# Helper function to prevent overwriting of files and add some custom ignores when using copytree
+# TODO: add pattern matching and add a config for this
+def ignore_existing(
+    source: Path,
+    destination: Path,
+    ignored_patterns: Optional[list[str]] = None,
+):
+    ignored_patterns = ignored_patterns or []
+
+    ignored = [
+        Path(path)
+        for path in glob.glob(
+            ignored_patterns,
+            flags=glob.NEGATE
+            | glob.GLOBSTAR
+            | glob.SPLIT
+            | glob.BRACE
+            | glob.EXTMATCH
+            | glob.CASE,
+            root_dir=source,
+        )
+    ]
+
+    logger.verbose(
+        "[Thebe Lite] The following files will not be available through python: {}",
+        ignored,
+    )
+
+    def _inner(folder: str, contents: list[str]):
+        relative_folder = Path(folder).relative_to(source)
+        ignore = []
+
+        for content in contents:
+            relative_content = relative_folder / content
+            if (
+                (destination / relative_content).is_file()
+                and (destination / relative_content).exists()
+            ) or relative_content in ignored:
+                ignore.append(content)
+        return ignore
+
+    return _inner
+
+
+def copy_over_files(app, exception):
+    thebe_config = app.config["thebe_config"]
+
+    if (exception is not None) or (not thebe_config.get("use_thebe_lite", False)):
+        return  # Something has gone wrong or not using thebe lite, let's not bother copying stuff
+
+    ignored_patterns = ["_*/"] + thebe_config.get("exclude_patterns", [])
+
+    shutil.copytree(
+        app.srcdir,
+        app.outdir,
+        symlinks=True,
+        dirs_exist_ok=True,
+        ignore=ignore_existing(
+            app.srcdir, app.outdir, ignored_patterns=ignored_patterns
+        ),
+    )
+
+
 def setup(app):
     logger.verbose("Adding copy buttons to code blocks...")
     # Add our static path
@@ -240,6 +362,9 @@ def setup(app):
     # Update the doctree with thebe-specific information if needed
     app.connect("doctree-resolved", update_thebe_context)
 
+    # Copy over all files as symlinks for Python scripts to access
+    app.connect("build-finished", copy_over_files)
+
     # configuration for this tool
     app.add_config_value("thebe_config", {}, "html")
 
@@ -248,6 +373,8 @@ def setup(app):
 
     # Add relevant code to headers
     app.add_css_file("sphinx-thebe.css")
+    app.add_css_file("thebe.css")
+    app.add_css_file("code.css")
 
     # ThebeButtonNode is the button that activates thebe
     # and is only rendered for the HTML builder
