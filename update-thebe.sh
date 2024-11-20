@@ -22,6 +22,6 @@ fi
 npm ci
 npm run build:thebe
 
-rm -rf $SCRIPT_DIR/src/sphinx_thebe/_thebe_static/*
-cp -r packages/thebe/lib/* $SCRIPT_DIR/src/sphinx_thebe/_thebe_static/
-cp -r packages/lite/dist/lib/* $SCRIPT_DIR/src/sphinx_thebe/_thebe_static/
+rm -rf $SCRIPT_DIR/src/teachbooks_sphinx_thebe/_thebe_static/*
+cp -r packages/thebe/lib/* $SCRIPT_DIR/src/teachbooks_sphinx_thebe/_thebe_static/
+cp -r packages/lite/dist/lib/* $SCRIPT_DIR/src/teachbooks_sphinx_thebe/_thebe_static/
