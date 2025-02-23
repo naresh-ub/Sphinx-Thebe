@@ -13,8 +13,9 @@ import shutil
 
 from wcmatch import glob
 
-from ._version import version as __version__
+#from ._version import version as __version__
 
+__version__ = "0.3.1"
 logger = logging.getLogger(__name__)
 
 THEBE_VERSION = "0.8.2"
