@@ -30,7 +30,8 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-dynamic = ["version"]
+#dynamic = ["version"]
+version = "0.3.1"
 keywords = [
     "development",
     "docutils",
@@ -65,9 +66,9 @@ dev = [
     "sphinx-thebe[testing]",
 ]
 
-[tool.hatch]
-version.source = "vcs"
-build.hooks.vcs.version-file = "src/sphinx_thebe/_version.py"
+#[tool.hatch]
+#version.source = "vcs"
+#build.hooks.vcs.version-file = "src/sphinx_thebe/_version.py"
 
 [tool.pytest.ini_options]
 testpaths = [
