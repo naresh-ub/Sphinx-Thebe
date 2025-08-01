@@ -88,7 +88,7 @@ def init_thebe_core(app, env, docnames):
     config_thebe = app.config["thebe_config"]
 
     # add scripts to the page for translation and configuration
-    app.add_js_file(None, body=f"let thebePythonReady = 'Python interaction ready!';")
+    app.add_js_file(None, body=f"let thebePythonReady = 'Python interaction ready for you!';")
 
     app.add_js_file(filename="refresh.js", loading_method="defer")
 
