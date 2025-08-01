@@ -13,6 +13,10 @@ import shutil
 
 from wcmatch import glob
 
+from sphinx.locale import get_translation
+MESSAGE_CATALOG_NAME = "sphinxthebe"
+translate = get_translation(MESSAGE_CATALOG_NAME)
+
 #from ._version import version as __version__
 
 __version__ = "0.3.1"
@@ -88,7 +92,7 @@ def init_thebe_core(app, env, docnames):
     config_thebe = app.config["thebe_config"]
 
     # add scripts to the page for translation and configuration
-    app.add_js_file(None, body=f"let thebePythonReady = 'Python interaction ready for you!';")
+    app.add_js_file(None, body=f"let thebePythonReady = '{translate('Python interaction ready!')}';")
 
     app.add_js_file(filename="refresh.js", loading_method="defer")
 
@@ -353,6 +357,12 @@ def copy_over_files(app, exception):
 
 
 def setup(app):
+
+     # add translations
+    package_dir = os.path.abspath(os.path.dirname(__file__))
+    locale_dir = os.path.join(package_dir, "translations", "locales")
+    app.add_message_catalog(MESSAGE_CATALOG_NAME, locale_dir)
+
     logger.verbose("Adding copy buttons to code blocks...")
     # Add our static path
     app.connect("builder-inited", st_static_path)
