@@ -8,5 +8,20 @@ msgstr ""
 "Language: th\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "กำลังเริ่มต้น Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "กำลังเปิดใช้ kernel Pyodide"
+
+msgid "Loading Thebe..."
+msgstr "กำลังโหลด Thebe..."
+
 msgid "Python interaction ready!"
 msgstr "การโต้ตอบ Python พร้อมแล้ว!"
+
+msgid "Running pre-initialized cells..."
+msgstr "กำลังรันเซลล์ที่เตรียมไว้ล่วงหน้า..."
+
+msgid "Waiting for packages to load..."
+msgstr "รอให้แพ็กเกจโหลด..."

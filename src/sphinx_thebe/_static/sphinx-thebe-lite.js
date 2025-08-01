@@ -147,20 +147,20 @@ var configureThebe = (thebe_config_obj) => {
   thebe_config = thebe_config_obj;
 
   // Update thebe buttons with loading message
-  updateThebeButtonStatus("Initializing Thebe");
+  updateThebeButtonStatus(thebeInitializingThebe));
 
   // Set thebe event hooks
   thebelab.on("status", function (evt, data) {
     console.log("Status changed:", data.status, data.message);
 
     updateThebeButtonStatus(
-      `<span class='launch_msg'>Launching Pyodide kernel: </span><span class='status'>` +
+      `<span class='launch_msg'>${thebeLaunchingPyodide}: </span><span class='status'>` +
         data.status +
         "</span>"
     );
 
     if (data.status === "attached") {
-      updateThebeButtonStatus(`Waiting for packages to load...`);
+      updateThebeButtonStatus(thebeWaitingForPackages);
 
       thebelab.events.listeners.status.clear(); // Remove further status message handling
     }
@@ -408,7 +408,7 @@ var initThebe = async () => {
   );
 
   console.log("[sphinx-thebe]: Loading thebe...");
-  document.querySelector(".thebe-launch-button ").innerText = "Loading thebe...";
+  document.querySelector(".thebe-launch-button ").innerText = thebeLoadingThebe;
 
   const THEBE_CONFIG = JSON.parse(
     document.querySelector("script[type=\"text/x-thebe-config\"]").text
@@ -471,7 +471,7 @@ var initThebe = async () => {
     code: `import ipykernel; ipykernel.version_info = (0,0); import micropip; await micropip.install("ipywidgets")`,
   }).done;
 
-  updateThebeButtonStatus("Running pre-intialized cells...");
+  updateThebeButtonStatus(thebeRunningCells);
 
   await runInitCells();
 

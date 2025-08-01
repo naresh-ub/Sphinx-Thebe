@@ -8,5 +8,20 @@ msgstr ""
 "Language: zh-cn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "初始化 Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "启动 Pyodide 内核"
+
+msgid "Loading Thebe..."
+msgstr "正在加载 Thebe..."
+
 msgid "Python interaction ready!"
 msgstr "Python 交互准备就绪！"
+
+msgid "Running pre-initialized cells..."
+msgstr "正在运行预初始化单元格..."
+
+msgid "Waiting for packages to load..."
+msgstr "等待包加载..."

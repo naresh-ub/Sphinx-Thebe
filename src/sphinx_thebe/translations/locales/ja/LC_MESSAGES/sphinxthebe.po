@@ -8,5 +8,20 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "Thebe を初期化中"
+
+msgid "Launching Pyodide kernel"
+msgstr "Pyodide カーネルを起動中"
+
+msgid "Loading Thebe..."
+msgstr "Thebe を読み込み中..."
+
 msgid "Python interaction ready!"
 msgstr "Python インタラクション準備完了！"
+
+msgid "Running pre-initialized cells..."
+msgstr "事前初期化セルを実行中..."
+
+msgid "Waiting for packages to load..."
+msgstr "パッケージの読み込みを待機中..."

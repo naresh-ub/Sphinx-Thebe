@@ -8,5 +8,20 @@ msgstr ""
 "Language: ta\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "Thebe தொடக்கப்படுகிறது"
+
+msgid "Launching Pyodide kernel"
+msgstr "Pyodide கர்னல் தொடங்கப்படுகிறது"
+
+msgid "Loading Thebe..."
+msgstr "Thebe ஏற்றப்படுகிறது..."
+
 msgid "Python interaction ready!"
 msgstr "Python இடைச்செயல் தயார்!"
+
+msgid "Running pre-initialized cells..."
+msgstr "முன்-துவக்கப்பட்ட செல்களை இயக்குகிறது..."
+
+msgid "Waiting for packages to load..."
+msgstr "தொகுப்புகள் ஏற்றப்படுவதற்காக காத்திருக்கிறது..."

@@ -8,5 +8,20 @@ msgstr ""
 "Language: fa\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "راه‌اندازی اولیه Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "راه‌اندازی هسته Pyodide"
+
+msgid "Loading Thebe..."
+msgstr "بارگیری Thebe..."
+
 msgid "Python interaction ready!"
 msgstr "تعامل Python آماده است!"
+
+msgid "Running pre-initialized cells..."
+msgstr "اجرای سلول‌های از پیش مقداردهی شده..."
+
+msgid "Waiting for packages to load..."
+msgstr "در انتظار بارگیری بسته‌ها..."

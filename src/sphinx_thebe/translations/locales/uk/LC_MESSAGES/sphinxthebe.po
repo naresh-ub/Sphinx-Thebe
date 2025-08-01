@@ -8,5 +8,20 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "Ініціалізація Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Запуск ядра Pyodide"
+
+msgid "Loading Thebe..."
+msgstr "Завантаження Thebe..."
+
 msgid "Python interaction ready!"
 msgstr "Взаємодія Python готова!"
+
+msgid "Running pre-initialized cells..."
+msgstr "Виконання попередньо ініціалізованих комірок..."
+
+msgid "Waiting for packages to load..."
+msgstr "Очікування завантаження пакетів..."

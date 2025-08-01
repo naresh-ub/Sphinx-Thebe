@@ -8,5 +8,20 @@ msgstr ""
 "Language: sw\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "Kuanzisha Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Inazindua kiini cha Pyodide"
+
+msgid "Loading Thebe..."
+msgstr "Inapakia Thebe..."
+
 msgid "Python interaction ready!"
 msgstr "Mwingiliano wa Python uko tayari!"
+
+msgid "Running pre-initialized cells..."
+msgstr "Kuendesha seli zilizowekwa awali..."
+
+msgid "Waiting for packages to load..."
+msgstr "Inasubiri vifurushi vipakiwe..."

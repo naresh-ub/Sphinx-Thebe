@@ -93,6 +93,11 @@ def init_thebe_core(app, env, docnames):
 
     # add scripts to the page for translation and configuration
     app.add_js_file(None, body=f"let thebePythonReady = '{translate('Python interaction ready!')}';")
+    app.add_js_file(None, body=f"let thebeRunningCells = '{translate('Running pre-initialized cells...')}';")
+    app.add_js_file(None, body=f"let thebeLoadingThebe = '{translate('Loading Thebe...')}';")
+    app.add_js_file(None, body=f"let thebeWaitingForPackages = '{translate('Waiting for packages to load...')}';")
+    app.add_js_file(None, body=f"let thebeLaunchingPyodide = '{translate('Launching Pyodide kernel')}';")
+    app.add_js_file(None, body=f"let thebeInitializingThebe = '{translate('Initializing Thebe')}';")
 
     app.add_js_file(filename="refresh.js", loading_method="defer")
 

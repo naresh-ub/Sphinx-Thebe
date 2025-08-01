@@ -8,5 +8,20 @@ msgstr ""
 "Language: no\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "Initialiserer Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Starter Pyodide-kjerne"
+
+msgid "Loading Thebe..."
+msgstr "Laster Thebe..."
+
 msgid "Python interaction ready!"
 msgstr "Python-interaksjon klar!"
+
+msgid "Running pre-initialized cells..."
+msgstr "Kjører forhåndsinitialiserte celler..."
+
+msgid "Waiting for packages to load..."
+msgstr "Venter på at pakker skal lastes..."

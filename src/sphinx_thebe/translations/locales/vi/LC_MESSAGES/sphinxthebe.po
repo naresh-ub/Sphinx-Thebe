@@ -8,5 +8,20 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Initializing Thebe"
+msgstr "Đang khởi tạo Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Đang khởi chạy kernel Pyodide"
+
+msgid "Loading Thebe..."
+msgstr "Đang tải Thebe..."
+
 msgid "Python interaction ready!"
 msgstr "Tương tác Python đã sẵn sàng!"
+
+msgid "Running pre-initialized cells..."
+msgstr "Đang chạy các ô đã khởi tạo trước..."
+
+msgid "Waiting for packages to load..."
+msgstr "Đang chờ tải các gói..."
