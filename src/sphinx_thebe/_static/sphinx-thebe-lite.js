@@ -475,7 +475,7 @@ var initThebe = async () => {
 
   await runInitCells();
 
-  updateThebeButtonStatus("Python interaction ready!", false);
+  updateThebeButtonStatus(thebePythonReady, false);
 
   moveHideInputOutput();
 };
