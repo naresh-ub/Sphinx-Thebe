@@ -147,7 +147,7 @@ var configureThebe = (thebe_config_obj) => {
   thebe_config = thebe_config_obj;
 
   // Update thebe buttons with loading message
-  updateThebeButtonStatus(thebeInitializingThebe));
+  updateThebeButtonStatus(thebeInitializingThebe);
 
   // Set thebe event hooks
   thebelab.on("status", function (evt, data) {
