@@ -125,54 +125,14 @@ def init_thebe_core(app, env, docnames):
                 
                 // Handle button text replacements more directly
                 document.querySelectorAll('button, [role="button"], .jp-Toolbar-item').forEach(el => {
-                    const text = el.textContent?.trim().toLowerCase();
-                    const title = el.title?.toLowerCase();
-                    
-                    // Handle "run all" (but not "run all cells")
-                    if ((text === 'run all' || title?.includes('run all')) && 
-                        !text.includes('cells') && !title?.includes('cells') && 
-                        !text.includes('restart') && !title?.includes('restart')) {
+                    const text = el.textContent?.trim();
+                    const title = el.title?.trim();
+
+                    if (text === "run all") {
                         if (!el.hasAttribute('data-i18n-processed')) {
                             el.textContent = thebeRunAll;
-                            if (el.title && el.title.toLowerCase().includes('run all')) {
-                                el.title = thebeRunAll;
-                            }
+                            el.title = thebeRunAllCells;
                             el.setAttribute('data-i18n-processed', 'run-all');
-                        }
-                    }
-                    
-                    // Handle "run all cells"
-                    else if (text === 'run all cells' || title?.includes('run all cells')) {
-                        if (!el.hasAttribute('data-i18n-processed')) {
-                            el.textContent = thebeRunAllCells;
-                            if (el.title && el.title.toLowerCase().includes('run all cells')) {
-                                el.title = thebeRunAllCells;
-                            }
-                            el.setAttribute('data-i18n-processed', 'run-all-cells');
-                        }
-                    }
-                    
-                    // Handle "restart & run all" (but not with "cells")
-                    else if ((text?.includes('restart') && text?.includes('run all') && !text.includes('cells')) ||
-                             (title?.includes('restart') && title?.includes('run all') && !title?.includes('cells'))) {
-                        if (!el.hasAttribute('data-i18n-processed')) {
-                            el.textContent = thebeRestartRun;
-                            if (el.title && el.title.toLowerCase().includes('restart') && el.title.toLowerCase().includes('run all')) {
-                                el.title = thebeRestartRun;
-                            }
-                            el.setAttribute('data-i18n-processed', 'restart-run');
-                        }
-                    }
-                    
-                    // Handle "restart the kernel and run all cells"
-                    else if ((text?.includes('restart') && text?.includes('kernel') && text?.includes('run all cells')) ||
-                             (title?.includes('restart') && title?.includes('kernel') && title?.includes('run all cells'))) {
-                        if (!el.hasAttribute('data-i18n-processed')) {
-                            el.textContent = thebeRestartRunCells;
-                            if (el.title) {
-                                el.title = thebeRestartRunCells;
-                            }
-                            el.setAttribute('data-i18n-processed', 'restart-run-cells');
                         }
                     }
                 });
