@@ -152,9 +152,12 @@ def init_thebe_core(app, env, docnames):
                     }
                 });
                 document.querySelectorAll('div.tooltip').forEach(el => {
+                    const text = el.textContent?.trim();
                     if (!el.hasAttribute('data-i18n-processed')) {
-                        console.log("Thebe tooltip:", el.innerHTML);
-                        el.setAttribute('data-i18n-processed', 'tooltip');
+                        if (text === "Launch Thebe") {
+                            el.innerHTML = el.innerHTML.replace("Launch Thebe", thebeLaunchThebe);
+                            el.setAttribute('data-i18n-processed', 'launch-thebe');
+                        }
                     }
                 });
             });
