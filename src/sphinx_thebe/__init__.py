@@ -123,35 +123,69 @@ def init_thebe_core(app, env, docnames):
                     }
                 });
                 
-                // Handle "run all" text
-                document.querySelectorAll('[title*="run all"]:not([title*="cells"]):not([title*="restart"])').forEach(el => {
-                    if (!el.hasAttribute('data-i18n-run-all')) {
-                        el.setAttribute('data-i18n-run-all', thebeRunAll);
+                // Handle button text replacements more directly
+                document.querySelectorAll('button, [role="button"], .jp-Toolbar-item').forEach(el => {
+                    const text = el.textContent?.trim().toLowerCase();
+                    const title = el.title?.toLowerCase();
+                    
+                    // Handle "run all" (but not "run all cells")
+                    if ((text === 'run all' || title?.includes('run all')) && 
+                        !text.includes('cells') && !title?.includes('cells') && 
+                        !text.includes('restart') && !title?.includes('restart')) {
+                        if (!el.hasAttribute('data-i18n-processed')) {
+                            el.textContent = thebeRunAll;
+                            if (el.title && el.title.toLowerCase().includes('run all')) {
+                                el.title = thebeRunAll;
+                            }
+                            el.setAttribute('data-i18n-processed', 'run-all');
+                        }
                     }
-                });
-                
-                // Handle "run all cells" text
-                document.querySelectorAll('[title*="run all cells"]').forEach(el => {
-                    if (!el.hasAttribute('data-i18n-run-all-cells')) {
-                        el.setAttribute('data-i18n-run-all-cells', thebeRunAllCells);
+                    
+                    // Handle "run all cells"
+                    else if (text === 'run all cells' || title?.includes('run all cells')) {
+                        if (!el.hasAttribute('data-i18n-processed')) {
+                            el.textContent = thebeRunAllCells;
+                            if (el.title && el.title.toLowerCase().includes('run all cells')) {
+                                el.title = thebeRunAllCells;
+                            }
+                            el.setAttribute('data-i18n-processed', 'run-all-cells');
+                        }
                     }
-                });
-                
-                // Handle "restart & run all" text
-                document.querySelectorAll('[title*="restart"][title*="run all"]:not([title*="cells"])').forEach(el => {
-                    if (!el.hasAttribute('data-i18n-restart-run')) {
-                        el.setAttribute('data-i18n-restart-run', thebeRestartRun);
+                    
+                    // Handle "restart & run all" (but not with "cells")
+                    else if ((text?.includes('restart') && text?.includes('run all') && !text.includes('cells')) ||
+                             (title?.includes('restart') && title?.includes('run all') && !title?.includes('cells'))) {
+                        if (!el.hasAttribute('data-i18n-processed')) {
+                            el.textContent = thebeRestartRun;
+                            if (el.title && el.title.toLowerCase().includes('restart') && el.title.toLowerCase().includes('run all')) {
+                                el.title = thebeRestartRun;
+                            }
+                            el.setAttribute('data-i18n-processed', 'restart-run');
+                        }
                     }
-                });
-                
-                // Handle "restart the kernel and run all cells" text
-                document.querySelectorAll('[title*="restart"][title*="kernel"][title*="run all cells"]').forEach(el => {
-                    if (!el.hasAttribute('data-i18n-restart-run-cells')) {
-                        el.setAttribute('data-i18n-restart-run-cells', thebeRestartRunCells);
+                    
+                    // Handle "restart the kernel and run all cells"
+                    else if ((text?.includes('restart') && text?.includes('kernel') && text?.includes('run all cells')) ||
+                             (title?.includes('restart') && title?.includes('kernel') && title?.includes('run all cells'))) {
+                        if (!el.hasAttribute('data-i18n-processed')) {
+                            el.textContent = thebeRestartRunCells;
+                            if (el.title) {
+                                el.title = thebeRestartRunCells;
+                            }
+                            el.setAttribute('data-i18n-processed', 'restart-run-cells');
+                        }
                     }
                 });
             });
-            observer.observe(document.body, { childList: true, subtree: true });
+            
+            // Initial scan
+            observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+            
+            // Also run immediately for any existing content
+            setTimeout(() => {
+                const event = new Event('DOMContentLoaded');
+                observer.takeRecords();
+            }, 100);
         });
     """)
 
