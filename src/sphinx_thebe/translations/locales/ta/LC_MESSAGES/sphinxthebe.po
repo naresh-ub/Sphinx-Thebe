@@ -8,6 +8,24 @@ msgstr ""
 "Language: ta\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "செல் சேர்க்கவும்"
+
+msgid "adds a new cell underneath"
+msgstr "கீழே ஒரு புதிய செல் சேர்க்கிறது"
+
+msgid "clear"
+msgstr "அழிக்கவும்"
+
+msgid "clear the output of the cell"
+msgstr "செல்லின் வெளியீட்டை அழிக்கவும்"
+
+msgid "delete cell"
+msgstr "செல் அழிக்கவும்"
+
+msgid "delete this cell"
+msgstr "இந்த செல்லை அழிக்கவும்"
+
 msgid "Initializing Thebe"
 msgstr "Thebe தொடக்கப்படுகிறது"
 

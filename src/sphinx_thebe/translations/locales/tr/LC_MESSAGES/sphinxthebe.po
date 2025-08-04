@@ -8,6 +8,24 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "hücre ekle"
+
+msgid "adds a new cell underneath"
+msgstr "altına yeni bir hücre ekler"
+
+msgid "clear"
+msgstr "temizle"
+
+msgid "clear the output of the cell"
+msgstr "hücrenin çıktısını temizle"
+
+msgid "delete cell"
+msgstr "hücreyi sil"
+
+msgid "delete this cell"
+msgstr "bu hücreyi sil"
+
 msgid "Initializing Thebe"
 msgstr "Thebe başlatılıyor"
 

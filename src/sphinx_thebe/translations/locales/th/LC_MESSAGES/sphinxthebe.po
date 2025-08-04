@@ -8,6 +8,24 @@ msgstr ""
 "Language: th\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "เพิ่มเซลล์"
+
+msgid "adds a new cell underneath"
+msgstr "เพิ่มเซลล์ใหม่ด้านล่าง"
+
+msgid "clear"
+msgstr "ล้าง"
+
+msgid "clear the output of the cell"
+msgstr "ล้างเอาต์พุตของเซลล์"
+
+msgid "delete cell"
+msgstr "ลบเซลล์"
+
+msgid "delete this cell"
+msgstr "ลบเซลล์นี้"
+
 msgid "Initializing Thebe"
 msgstr "กำลังเริ่มต้น Thebe"
 

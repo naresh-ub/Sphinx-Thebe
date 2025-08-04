@@ -8,6 +8,24 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "adaugă celulă"
+
+msgid "adds a new cell underneath"
+msgstr "adaugă o celulă nouă dedesubt"
+
+msgid "clear"
+msgstr "șterge"
+
+msgid "clear the output of the cell"
+msgstr "șterge ieșirea celulei"
+
+msgid "delete cell"
+msgstr "șterge celula"
+
+msgid "delete this cell"
+msgstr "șterge această celulă"
+
 msgid "Initializing Thebe"
 msgstr "Se inițializează Thebe"
 

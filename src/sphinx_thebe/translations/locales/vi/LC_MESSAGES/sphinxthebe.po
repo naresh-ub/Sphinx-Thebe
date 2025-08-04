@@ -8,6 +8,24 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "thêm ô"
+
+msgid "adds a new cell underneath"
+msgstr "thêm ô mới ở bên dưới"
+
+msgid "clear"
+msgstr "xóa"
+
+msgid "clear the output of the cell"
+msgstr "xóa đầu ra của ô"
+
+msgid "delete cell"
+msgstr "xóa ô"
+
+msgid "delete this cell"
+msgstr "xóa ô này"
+
 msgid "Initializing Thebe"
 msgstr "Đang khởi tạo Thebe"
 

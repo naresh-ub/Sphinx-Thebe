@@ -8,6 +8,24 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "lägg till cell"
+
+msgid "adds a new cell underneath"
+msgstr "lägger till en ny cell under"
+
+msgid "clear"
+msgstr "rensa"
+
+msgid "clear the output of the cell"
+msgstr "rensa cellens utdata"
+
+msgid "delete cell"
+msgstr "ta bort cell"
+
+msgid "delete this cell"
+msgstr "ta bort denna cell"
+
 msgid "Initializing Thebe"
 msgstr "Initialiserar Thebe"
 

@@ -8,6 +8,24 @@ msgstr ""
 "Language: zh-cn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "添加单元格"
+
+msgid "adds a new cell underneath"
+msgstr "在下方添加新单元格"
+
+msgid "clear"
+msgstr "清除"
+
+msgid "clear the output of the cell"
+msgstr "清除单元格的输出"
+
+msgid "delete cell"
+msgstr "删除单元格"
+
+msgid "delete this cell"
+msgstr "删除此单元格"
+
 msgid "Initializing Thebe"
 msgstr "初始化 Thebe"
 

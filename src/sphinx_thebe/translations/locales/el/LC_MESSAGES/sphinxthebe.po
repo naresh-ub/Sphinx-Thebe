@@ -8,6 +8,24 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "προσθήκη κελιού"
+
+msgid "adds a new cell underneath"
+msgstr "προσθέτει ένα νέο κελί από κάτω"
+
+msgid "clear"
+msgstr "εκκαθάριση"
+
+msgid "clear the output of the cell"
+msgstr "εκκαθάριση εξόδου του κελιού"
+
+msgid "delete cell"
+msgstr "διαγραφή κελιού"
+
+msgid "delete this cell"
+msgstr "διαγραφή αυτού του κελιού"
+
 msgid "Initializing Thebe"
 msgstr "Αρχικοποίηση Thebe"
 

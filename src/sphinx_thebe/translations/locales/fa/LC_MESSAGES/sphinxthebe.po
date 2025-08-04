@@ -8,6 +8,24 @@ msgstr ""
 "Language: fa\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "افزودن سلول"
+
+msgid "adds a new cell underneath"
+msgstr "یک سلول جدید در زیر اضافه می‌کند"
+
+msgid "clear"
+msgstr "پاک کردن"
+
+msgid "clear the output of the cell"
+msgstr "پاک کردن خروجی سلول"
+
+msgid "delete cell"
+msgstr "حذف سلول"
+
+msgid "delete this cell"
+msgstr "حذف این سلول"
+
 msgid "Initializing Thebe"
 msgstr "راه‌اندازی اولیه Thebe"
 

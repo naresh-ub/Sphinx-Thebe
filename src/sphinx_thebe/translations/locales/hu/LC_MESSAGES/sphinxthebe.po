@@ -8,6 +8,24 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "cella hozzáadása"
+
+msgid "adds a new cell underneath"
+msgstr "új cellát ad hozzá alul"
+
+msgid "clear"
+msgstr "törlés"
+
+msgid "clear the output of the cell"
+msgstr "cella kimenetének törlése"
+
+msgid "delete cell"
+msgstr "cella törlése"
+
+msgid "delete this cell"
+msgstr "ennek a cellának a törlése"
+
 msgid "Initializing Thebe"
 msgstr "Thebe inicializálása"
 

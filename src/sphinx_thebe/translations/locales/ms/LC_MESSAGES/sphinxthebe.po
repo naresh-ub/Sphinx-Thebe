@@ -8,6 +8,24 @@ msgstr ""
 "Language: ms\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "tambah sel"
+
+msgid "adds a new cell underneath"
+msgstr "menambah sel baru di bawah"
+
+msgid "clear"
+msgstr "kosongkan"
+
+msgid "clear the output of the cell"
+msgstr "kosongkan output sel"
+
+msgid "delete cell"
+msgstr "padam sel"
+
+msgid "delete this cell"
+msgstr "padam sel ini"
+
 msgid "Initializing Thebe"
 msgstr "Memulakan Thebe"
 

@@ -8,6 +8,24 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "セルを追加"
+
+msgid "adds a new cell underneath"
+msgstr "下に新しいセルを追加"
+
+msgid "clear"
+msgstr "クリア"
+
+msgid "clear the output of the cell"
+msgstr "セルの出力をクリア"
+
+msgid "delete cell"
+msgstr "セルを削除"
+
+msgid "delete this cell"
+msgstr "このセルを削除"
+
 msgid "Initializing Thebe"
 msgstr "Thebe を初期化中"
 

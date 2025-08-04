@@ -8,6 +8,24 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "přidat buňku"
+
+msgid "adds a new cell underneath"
+msgstr "přidá novou buňku pod"
+
+msgid "clear"
+msgstr "vymazat"
+
+msgid "clear the output of the cell"
+msgstr "vymazat výstup buňky"
+
+msgid "delete cell"
+msgstr "smazat buňku"
+
+msgid "delete this cell"
+msgstr "smazat tuto buňku"
+
 msgid "Initializing Thebe"
 msgstr "Inicializace Thebe"
 

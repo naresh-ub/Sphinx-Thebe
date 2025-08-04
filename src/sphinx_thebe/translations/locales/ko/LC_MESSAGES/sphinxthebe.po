@@ -8,6 +8,24 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "셀 추가"
+
+msgid "adds a new cell underneath"
+msgstr "아래에 새 셀 추가"
+
+msgid "clear"
+msgstr "지우기"
+
+msgid "clear the output of the cell"
+msgstr "셀 출력 지우기"
+
+msgid "delete cell"
+msgstr "셀 삭제"
+
+msgid "delete this cell"
+msgstr "이 셀 삭제"
+
 msgid "Initializing Thebe"
 msgstr "Thebe 초기화 중"
 

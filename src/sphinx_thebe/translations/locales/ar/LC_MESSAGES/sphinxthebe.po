@@ -8,6 +8,24 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "إضافة خلية"
+
+msgid "adds a new cell underneath"
+msgstr "يضيف خلية جديدة تحتها"
+
+msgid "clear"
+msgstr "مسح"
+
+msgid "clear the output of the cell"
+msgstr "مسح مخرجات الخلية"
+
+msgid "delete cell"
+msgstr "حذف الخلية"
+
+msgid "delete this cell"
+msgstr "حذف هذه الخلية"
+
 msgid "Initializing Thebe"
 msgstr "تهيئة Thebe"
 

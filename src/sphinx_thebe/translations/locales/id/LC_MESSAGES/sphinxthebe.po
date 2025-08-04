@@ -8,6 +8,24 @@ msgstr ""
 "Language: id\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "tambah sel"
+
+msgid "adds a new cell underneath"
+msgstr "menambahkan sel baru di bawah"
+
+msgid "clear"
+msgstr "hapus"
+
+msgid "clear the output of the cell"
+msgstr "hapus output sel"
+
+msgid "delete cell"
+msgstr "hapus sel"
+
+msgid "delete this cell"
+msgstr "hapus sel ini"
+
 msgid "Initializing Thebe"
 msgstr "Menginisialisasi Thebe"
 

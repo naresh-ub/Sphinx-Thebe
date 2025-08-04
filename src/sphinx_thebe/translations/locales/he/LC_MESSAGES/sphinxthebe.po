@@ -8,6 +8,24 @@ msgstr ""
 "Language: he\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "הוסף תא"
+
+msgid "adds a new cell underneath"
+msgstr "מוסיף תא חדש מתחת"
+
+msgid "clear"
+msgstr "נקה"
+
+msgid "clear the output of the cell"
+msgstr "נקה את הפלט של התא"
+
+msgid "delete cell"
+msgstr "מחק תא"
+
+msgid "delete this cell"
+msgstr "מחק את התא הזה"
+
 msgid "Initializing Thebe"
 msgstr "מאתחל את Thebe"
 

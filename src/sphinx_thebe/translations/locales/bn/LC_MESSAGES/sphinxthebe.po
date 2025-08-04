@@ -8,6 +8,24 @@ msgstr ""
 "Language: bn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "সেল যোগ করুন"
+
+msgid "adds a new cell underneath"
+msgstr "নিচে একটি নতুন সেল যোগ করে"
+
+msgid "clear"
+msgstr "পরিষ্কার করুন"
+
+msgid "clear the output of the cell"
+msgstr "সেলের আউটপুট পরিষ্কার করুন"
+
+msgid "delete cell"
+msgstr "সেল মুছে ফেলুন"
+
+msgid "delete this cell"
+msgstr "এই সেল মুছে ফেলুন"
+
 msgid "Initializing Thebe"
 msgstr "Thebe শুরু করা হচ্ছে"
 

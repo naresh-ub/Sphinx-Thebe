@@ -8,6 +8,24 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "додати комірку"
+
+msgid "adds a new cell underneath"
+msgstr "додає нову комірку знизу"
+
+msgid "clear"
+msgstr "очистити"
+
+msgid "clear the output of the cell"
+msgstr "очистити вивід комірки"
+
+msgid "delete cell"
+msgstr "видалити комірку"
+
+msgid "delete this cell"
+msgstr "видалити цю комірку"
+
 msgid "Initializing Thebe"
 msgstr "Ініціалізація Thebe"
 

@@ -8,6 +8,24 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "dodaj komórkę"
+
+msgid "adds a new cell underneath"
+msgstr "dodaje nową komórkę poniżej"
+
+msgid "clear"
+msgstr "wyczyść"
+
+msgid "clear the output of the cell"
+msgstr "wyczyść wynik komórki"
+
+msgid "delete cell"
+msgstr "usuń komórkę"
+
+msgid "delete this cell"
+msgstr "usuń tę komórkę"
+
 msgid "Initializing Thebe"
 msgstr "Inicjalizacja Thebe"
 

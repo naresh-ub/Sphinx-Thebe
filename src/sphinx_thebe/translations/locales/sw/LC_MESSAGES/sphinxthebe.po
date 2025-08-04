@@ -8,6 +8,24 @@ msgstr ""
 "Language: sw\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "ongeza seli"
+
+msgid "adds a new cell underneath"
+msgstr "inaongeza seli mpya chini"
+
+msgid "clear"
+msgstr "safisha"
+
+msgid "clear the output of the cell"
+msgstr "safisha matokeo ya seli"
+
+msgid "delete cell"
+msgstr "futa seli"
+
+msgid "delete this cell"
+msgstr "futa seli hii"
+
 msgid "Initializing Thebe"
 msgstr "Kuanzisha Thebe"
 

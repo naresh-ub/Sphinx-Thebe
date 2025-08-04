@@ -8,6 +8,24 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "add cell"
+msgstr "добавить ячейку"
+
+msgid "adds a new cell underneath"
+msgstr "добавляет новую ячейку снизу"
+
+msgid "clear"
+msgstr "очистить"
+
+msgid "clear the output of the cell"
+msgstr "очистить вывод ячейки"
+
+msgid "delete cell"
+msgstr "удалить ячейку"
+
+msgid "delete this cell"
+msgstr "удалить эту ячейку"
+
 msgid "Initializing Thebe"
 msgstr "Инициализация Thebe"
 
