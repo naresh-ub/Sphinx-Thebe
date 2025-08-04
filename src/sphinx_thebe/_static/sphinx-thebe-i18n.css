@@ -1,0 +1,20 @@
+/* 
+ * Sphinx-Thebe Internationalization CSS Overrides
+ * Minimal changes to override hardcoded text from thebe.css with translatable content
+ */
+
+/* Override "No results" text for command palette search */
+.lm-CommandPalette-content:empty::after {
+  content: attr(data-i18n-no-results, "No results") !important;
+}
+
+/* Override "No results" text for general search results (from thebe.css line 2253) */
+.jp-search-no-results {
+    font-size: 0 !important; /* Hide original text */
+}
+
+.jp-search-no-results::before {
+    content: attr(data-i18n-no-results, "No results") !important;
+    font-size: 13px !important;
+    display: block;
+}

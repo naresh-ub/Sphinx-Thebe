@@ -32,11 +32,23 @@ msgstr "初始化 Thebe"
 msgid "Launching Pyodide kernel"
 msgstr "启动 Pyodide 内核"
 
+msgid "Launching from mybinder.org"
+msgstr "从 mybinder.org 启动"
+
 msgid "Loading Thebe..."
 msgstr "正在加载 Thebe..."
 
+msgid "Loading Thebe from CDN..."
+msgstr "从 CDN 加载 Thebe..."
+
+msgid "No results"
+msgstr "无结果"
+
 msgid "Python interaction ready!"
 msgstr "Python 交互准备就绪！"
+
+msgid "Run code"
+msgstr "运行代码"
 
 msgid "Running pre-initialized cells..."
 msgstr "正在运行预初始化单元格..."

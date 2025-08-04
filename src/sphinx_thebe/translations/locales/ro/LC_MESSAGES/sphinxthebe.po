@@ -32,11 +32,23 @@ msgstr "Se inițializează Thebe"
 msgid "Launching Pyodide kernel"
 msgstr "Se lansează kernel-ul Pyodide"
 
+msgid "Launching from mybinder.org"
+msgstr "Se lansează de la mybinder.org"
+
 msgid "Loading Thebe..."
 msgstr "Se încarcă Thebe..."
 
+msgid "Loading Thebe from CDN..."
+msgstr "Se încarcă Thebe de la CDN..."
+
+msgid "No results"
+msgstr "Niciun rezultat"
+
 msgid "Python interaction ready!"
 msgstr "Interacțiunea Python este gata!"
+
+msgid "Run code"
+msgstr "Rulează codul"
 
 msgid "Running pre-initialized cells..."
 msgstr "Rularea celulelor pre-inițializate..."

@@ -32,11 +32,23 @@ msgstr "Đang khởi tạo Thebe"
 msgid "Launching Pyodide kernel"
 msgstr "Đang khởi chạy kernel Pyodide"
 
+msgid "Launching from mybinder.org"
+msgstr "Đang khởi chạy từ mybinder.org"
+
 msgid "Loading Thebe..."
 msgstr "Đang tải Thebe..."
 
+msgid "Loading Thebe from CDN..."
+msgstr "Đang tải Thebe từ CDN..."
+
+msgid "No results"
+msgstr "Không có kết quả"
+
 msgid "Python interaction ready!"
 msgstr "Tương tác Python đã sẵn sàng!"
+
+msgid "Run code"
+msgstr "Chạy mã"
 
 msgid "Running pre-initialized cells..."
 msgstr "Đang chạy các ô đã khởi tạo trước..."

@@ -32,11 +32,23 @@ msgstr "Kuanzisha Thebe"
 msgid "Launching Pyodide kernel"
 msgstr "Inazindua kiini cha Pyodide"
 
+msgid "Launching from mybinder.org"
+msgstr "Inazindua kutoka mybinder.org"
+
 msgid "Loading Thebe..."
 msgstr "Inapakia Thebe..."
 
+msgid "Loading Thebe from CDN..."
+msgstr "Inapakia Thebe kutoka CDN..."
+
+msgid "No results"
+msgstr "Hakuna matokeo"
+
 msgid "Python interaction ready!"
 msgstr "Mwingiliano wa Python uko tayari!"
+
+msgid "Run code"
+msgstr "Endesha msimbo"
 
 msgid "Running pre-initialized cells..."
 msgstr "Kuendesha seli zilizowekwa awali..."

@@ -32,11 +32,23 @@ msgstr "Thebe 초기화 중"
 msgid "Launching Pyodide kernel"
 msgstr "Pyodide 커널 시작 중"
 
+msgid "Launching from mybinder.org"
+msgstr "mybinder.org에서 시작 중"
+
 msgid "Loading Thebe..."
 msgstr "Thebe 로딩 중..."
 
+msgid "Loading Thebe from CDN..."
+msgstr "CDN에서 Thebe 로딩 중..."
+
+msgid "No results"
+msgstr "결과 없음"
+
 msgid "Python interaction ready!"
 msgstr "Python 상호작용 준비 완료!"
+
+msgid "Run code"
+msgstr "코드 실행"
 
 msgid "Running pre-initialized cells..."
 msgstr "사전 초기화된 셀 실행 중..."

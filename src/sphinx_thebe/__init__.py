@@ -104,6 +104,23 @@ def init_thebe_core(app, env, docnames):
     app.add_js_file(None, body=f"let thebeClearOutput = '{translate('clear the output of the cell')}';")
     app.add_js_file(None, body=f"let thebeAddCell = '{translate('add cell')}';")
     app.add_js_file(None, body=f"let thebeAddNewCell = '{translate('adds a new cell underneath')}';")
+    app.add_js_file(None, body=f"let thebeLaunchingBinder = '{translate('Launching from mybinder.org')}';")
+    app.add_js_file(None, body=f"let thebeLoadingCDN = '{translate('Loading thebe from CDN...')}';")
+    app.add_js_file(None, body=f"let thebeNoResults = '{translate('No results')}';")
+
+    # Minimal i18n injection for CSS overrides
+    app.add_js_file(None, body="""
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new MutationObserver(function() {
+                document.querySelectorAll('.lm-CommandPalette-content, .jp-search-no-results').forEach(el => {
+                    if (!el.hasAttribute('data-i18n-no-results')) {
+                        el.setAttribute('data-i18n-no-results', thebeNoResults);
+                    }
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
+    """)
 
     app.add_js_file(filename="refresh.js", loading_method="defer")
 
@@ -260,7 +277,7 @@ class ThebeButtonNode(nodes.Element):
     is enabled, the node is added at the bottom of the document.
     """
 
-    def __init__(self, rawsource="", *children, text="Run code", **attributes):
+    def __init__(self, rawsource="", *children, text=translate("Run code"), **attributes):
         super().__init__("", text=text)
 
     def html(self):
@@ -401,6 +418,7 @@ def setup(app):
     app.add_css_file("thebe.css")
     app.add_css_file("code.css")
     app.add_css_file("dark_mode_widget.css")
+    app.add_css_file("sphinx-thebe-i18n.css")
 
     # ThebeButtonNode is the button that activates thebe
     # and is only rendered for the HTML builder

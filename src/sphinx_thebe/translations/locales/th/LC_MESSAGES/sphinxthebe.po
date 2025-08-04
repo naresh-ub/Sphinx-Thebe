@@ -32,11 +32,23 @@ msgstr "กำลังเริ่มต้น Thebe"
 msgid "Launching Pyodide kernel"
 msgstr "กำลังเปิดใช้ kernel Pyodide"
 
+msgid "Launching from mybinder.org"
+msgstr "กำลังเปิดใช้จาก mybinder.org"
+
 msgid "Loading Thebe..."
 msgstr "กำลังโหลด Thebe..."
 
+msgid "Loading Thebe from CDN..."
+msgstr "กำลังโหลด Thebe จาก CDN..."
+
+msgid "No results"
+msgstr "ไม่มีผลลัพธ์"
+
 msgid "Python interaction ready!"
 msgstr "การโต้ตอบ Python พร้อมแล้ว!"
+
+msgid "Run code"
+msgstr "รันโค้ด"
 
 msgid "Running pre-initialized cells..."
 msgstr "กำลังรันเซลล์ที่เตรียมไว้ล่วงหน้า..."
