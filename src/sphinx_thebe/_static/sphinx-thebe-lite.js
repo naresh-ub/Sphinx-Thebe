@@ -69,15 +69,15 @@ function finalizeCodeCells(cells) {
   cells.forEach((codeCell, index) => {
     const addCell = createButton(
       ["thebe-button"],
-      "adds a new cell underneath",
-      "add cell"
+      thebeAddNewCell,
+      thebeAddCell
     );
     addToThebeControls(codeCell, addCell);
 
     const clear = createButton(
       ["thebe-button"],
-      "clear the output of the cell",
-      "clear"
+      thebeClearOutput,
+      thebeClear
     );
     addToThebeControls(codeCell, clear);
 
@@ -111,8 +111,8 @@ function finalizeCodeCells(cells) {
 
       const deleteCell = createButton(
         ["thebe-button"],
-        "deletes this cell",
-        "delete cell"
+        thebeDeleteThisCell,
+        thebeDeleteCell
       );
       addToThebeControls(newCell, deleteCell);
       deleteCell.onclick = () => {

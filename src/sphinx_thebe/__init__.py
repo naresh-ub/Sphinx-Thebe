@@ -98,6 +98,12 @@ def init_thebe_core(app, env, docnames):
     app.add_js_file(None, body=f"let thebeWaitingForPackages = '{translate('Waiting for packages to load...')}';")
     app.add_js_file(None, body=f"let thebeLaunchingPyodide = '{translate('Launching Pyodide kernel')}';")
     app.add_js_file(None, body=f"let thebeInitializingThebe = '{translate('Initializing Thebe')}';")
+    app.add_js_file(None, body=f"let thebeDeleteCell = '{translate('delete cell')}';")
+    app.add_js_file(None, body=f"let thebeDeleteThisCell = '{translate('delete this cell')}';")
+    app.add_js_file(None, body=f"let thebeClear = '{translate('clear')}';")
+    app.add_js_file(None, body=f"let thebeClearOutput = '{translate('clear the output of the cell')}';")
+    app.add_js_file(None, body=f"let thebeAddCell = '{translate('add cell')}';")
+    app.add_js_file(None, body=f"let thebeAddNewCell = '{translate('adds a new cell underneath')}';")
 
     app.add_js_file(filename="refresh.js", loading_method="defer")
 
