@@ -149,6 +149,7 @@ def init_thebe_core(app, env, docnames):
                             el.innerHTML = el.innerHTML.replace("Live Code", thebeLiveCode);
                             el.setAttribute('data-i18n-processed', 'live-code');
                         }
+                    }
                 });
             });
             
