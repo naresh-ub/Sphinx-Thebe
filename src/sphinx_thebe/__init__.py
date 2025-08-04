@@ -147,9 +147,10 @@ def init_thebe_core(app, env, docnames):
                     const title = el.title?.trim();
 
                     if (!el.hasAttribute('data-i18n-processed')) {
+                        console.log("Thebe button text:", text, title);
+                        console.log("Thebe button:", el)
                         if (text === "Live Code") {
                             el.textContent = thebeLiveCode;
-                            el.title = thebeLaunchThebe;
                             el.setAttribute('data-i18n-processed', 'live-code');
                         }
                     }
