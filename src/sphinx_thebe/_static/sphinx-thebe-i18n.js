@@ -1,3 +1,13 @@
+document.querySelectorAll('button.btn-launch-thebe').forEach(button => {
+  button.addEventListener('click', () => {
+    const tooltipId = button.getAttribute('aria-describedby');
+    const tooltip = document.getElementById(tooltipId);
+    if (tooltip) {
+      tooltip.style.display = 'none'; // Or toggle, depending on your logic
+    }
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   const observer = new MutationObserver(function () {
     // Handle button text replacements more directly
