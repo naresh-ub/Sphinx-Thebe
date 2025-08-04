@@ -143,7 +143,12 @@ def init_thebe_core(app, env, docnames):
                     }
                 });
                 document.querySelectorAll('button.btn-launch-thebe').forEach(el => {
-                    console.log("Thebe button:", el);
+                    const text = el.textContent?.trim();
+                    if (!el.hasAttribute('data-i18n-processed')) {
+                        if (text === "Live Code") {
+                            el.innerHTML = el.innerHTML.replace("Live Code", thebeLiveCode);
+                            el.setAttribute('data-i18n-processed', 'live-code');
+                        }
                 });
             });
             
