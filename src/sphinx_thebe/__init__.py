@@ -414,7 +414,6 @@ def setup(app):
     app.add_css_file("thebe.css")
     app.add_css_file("code.css")
     app.add_css_file("dark_mode_widget.css")
-    app.add_css_file("sphinx-thebe-i18n.css")
 
     # ThebeButtonNode is the button that activates thebe
     # and is only rendered for the HTML builder
