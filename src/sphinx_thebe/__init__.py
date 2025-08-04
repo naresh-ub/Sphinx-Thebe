@@ -106,27 +106,21 @@ def init_thebe_core(app, env, docnames):
     app.add_js_file(None, body=f"let thebeAddNewCell = '{translate('adds a new cell underneath')}';")
     app.add_js_file(None, body=f"let thebeLaunchingBinder = '{translate('Launching from mybinder.org')}';")
     app.add_js_file(None, body=f"let thebeLoadingCDN = '{translate('Loading thebe from CDN...')}';")
-    app.add_js_file(None, body=f"let thebeNoResults = '{translate('No results')}';")
     app.add_js_file(None, body=f"let thebeRun = '{translate('run')}';")
     app.add_js_file(None, body=f"let thebeRunCell = '{translate('run this cell')}';")
     app.add_js_file(None, body=f"let thebeRunAll = '{translate('run all')}';")
     app.add_js_file(None, body=f"let thebeRunAllCells = '{translate('run all cells')}';")
     app.add_js_file(None, body=f"let thebeRestartRun = '{translate('restart & run all')}';")
     app.add_js_file(None, body=f"let thebeRestartRunCells = '{translate('restart the kernel and run all cells')}';")
+    app.add_js_file(None, body=f"let thebeLiveCode = '{translate('Live Code')}';")
+    app.add_js_file(None, body=f"let thebeLaunchThebe = '{translate('Launch Thebe')}';")
 
     # Minimal i18n injection for CSS overrides
     app.add_js_file(None, body="""
         document.addEventListener('DOMContentLoaded', function() {
             const observer = new MutationObserver(function() {
-                // Handle "No results" text
-                document.querySelectorAll('.lm-CommandPalette-content, .jp-search-no-results').forEach(el => {
-                    if (!el.hasAttribute('data-i18n-no-results')) {
-                        el.setAttribute('data-i18n-no-results', thebeNoResults);
-                    }
-                });
-                
                 // Handle button text replacements more directly
-                document.querySelectorAll('button, [role="button"], .jp-Toolbar-item').forEach(el => {
+                document.querySelectorAll('button.thebe-button').forEach(el => {
                     const text = el.textContent?.trim();
                     const title = el.title?.trim();
 
@@ -145,6 +139,18 @@ def init_thebe_core(app, env, docnames):
                             el.textContent = thebeRestartRun;
                             el.title = thebeRestartRunCells;
                             el.setAttribute('data-i18n-processed', 'restart-run-all');
+                        }
+                    }
+                });
+                document.querySelectorAll('button.btn-launch-thebe').forEach(el => {
+                    const text = el.textContent?.trim();
+                    const title = el.title?.trim();
+
+                    if (!el.hasAttribute('data-i18n-processed')) {
+                        if (text === "Live Code") {
+                            el.textContent = thebeLiveCode;
+                            el.title = thebeLaunchThebe;
+                            el.setAttribute('data-i18n-processed', 'live-code');
                         }
                     }
                 });

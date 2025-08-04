@@ -35,6 +35,12 @@ msgstr "Meluncurkan kernel Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "Meluncurkan dari mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "Jalankan Thebe"
+
+msgid "Live Code"
+msgstr "Kode Langsung"
+
 msgid "Loading Thebe..."
 msgstr "Memuat Thebe..."
 

@@ -35,6 +35,12 @@ msgstr "Pyodide কার্নেল চালু করা হচ্ছে"
 msgid "Launching from mybinder.org"
 msgstr "mybinder.org থেকে চালু করা হচ্ছে"
 
+msgid "Launch Thebe"
+msgstr "Thebe চালু করুন"
+
+msgid "Live Code"
+msgstr "লাইভ কোড"
+
 msgid "Loading Thebe..."
 msgstr "Thebe লোড হচ্ছে..."
 

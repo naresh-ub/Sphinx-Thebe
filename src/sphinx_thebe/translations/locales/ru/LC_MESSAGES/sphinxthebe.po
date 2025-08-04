@@ -35,6 +35,12 @@ msgstr "Запуск ядра Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "Запуск с mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "Запустить Thebe"
+
+msgid "Live Code"
+msgstr "Живой Код"
+
 msgid "Loading Thebe..."
 msgstr "Загрузка Thebe..."
 

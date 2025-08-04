@@ -35,6 +35,12 @@ msgstr "Đang khởi chạy kernel Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "Đang khởi chạy từ mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "Khởi chạy Thebe"
+
+msgid "Live Code"
+msgstr "Mã Trực Tiếp"
+
 msgid "Loading Thebe..."
 msgstr "Đang tải Thebe..."
 

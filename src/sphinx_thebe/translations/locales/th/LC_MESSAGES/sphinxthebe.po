@@ -35,6 +35,12 @@ msgstr "กำลังเปิดใช้ kernel Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "กำลังเปิดใช้จาก mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "เปิด Thebe"
+
+msgid "Live Code"
+msgstr "โค้ดสด"
+
 msgid "Loading Thebe..."
 msgstr "กำลังโหลด Thebe..."
 

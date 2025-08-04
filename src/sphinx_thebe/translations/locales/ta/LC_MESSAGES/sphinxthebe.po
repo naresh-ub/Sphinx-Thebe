@@ -35,6 +35,12 @@ msgstr "Pyodide கர்னல் தொடங்கப்படுகிறத
 msgid "Launching from mybinder.org"
 msgstr "mybinder.org இலிருந்து தொடங்கப்படுகிறது"
 
+msgid "Launch Thebe"
+msgstr "Thebe ஐ தொடங்கவும்"
+
+msgid "Live Code"
+msgstr "நேரடி குறியீடு"
+
 msgid "Loading Thebe..."
 msgstr "Thebe ஏற்றப்படுகிறது..."
 

@@ -35,6 +35,12 @@ msgstr "راه‌اندازی هسته Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "راه‌اندازی از mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "راه‌اندازی Thebe"
+
+msgid "Live Code"
+msgstr "کد زنده"
+
 msgid "Loading Thebe..."
 msgstr "بارگیری Thebe..."
 

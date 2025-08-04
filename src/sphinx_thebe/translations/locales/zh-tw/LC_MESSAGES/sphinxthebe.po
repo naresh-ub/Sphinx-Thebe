@@ -35,6 +35,12 @@ msgstr "啟動 Pyodide 內核"
 msgid "Launching from mybinder.org"
 msgstr "從 mybinder.org 啟動"
 
+msgid "Launch Thebe"
+msgstr "啟動 Thebe"
+
+msgid "Live Code"
+msgstr "即時程式碼"
+
 msgid "Loading Thebe..."
 msgstr "正在載入 Thebe..."
 

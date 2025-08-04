@@ -35,6 +35,12 @@ msgstr "מפעיל ליבת Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "מפעיל מ-mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "הפעל את Thebe"
+
+msgid "Live Code"
+msgstr "קוד חי"
+
 msgid "Loading Thebe..."
 msgstr "טוען את Thebe..."
 

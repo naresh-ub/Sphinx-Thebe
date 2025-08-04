@@ -35,6 +35,12 @@ msgstr "تشغيل نواة Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "التشغيل من mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "تشغيل Thebe"
+
+msgid "Live Code"
+msgstr "كود مباشر"
+
 msgid "Loading Thebe..."
 msgstr "تحميل Thebe..."
 

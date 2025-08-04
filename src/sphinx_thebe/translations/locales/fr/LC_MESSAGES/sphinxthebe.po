@@ -35,6 +35,12 @@ msgstr "Lancement du noyau Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "Lancement depuis mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "Lancer Thebe"
+
+msgid "Live Code"
+msgstr "Code en Direct"
+
 msgid "Loading Thebe..."
 msgstr "Chargement de Thebe..."
 

@@ -35,6 +35,12 @@ msgstr "Εκκίνηση πυρήνα Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "Εκκίνηση από το mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "Εκκίνηση Thebe"
+
+msgid "Live Code"
+msgstr "Ζωντανός Κώδικας"
+
 msgid "Loading Thebe..."
 msgstr "Φόρτωση Thebe..."
 

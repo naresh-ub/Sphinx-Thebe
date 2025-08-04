@@ -35,6 +35,12 @@ msgstr "Pyodide 커널 시작 중"
 msgid "Launching from mybinder.org"
 msgstr "mybinder.org에서 시작 중"
 
+msgid "Launch Thebe"
+msgstr "Thebe 실행"
+
+msgid "Live Code"
+msgstr "라이브 코드"
+
 msgid "Loading Thebe..."
 msgstr "Thebe 로딩 중..."
 

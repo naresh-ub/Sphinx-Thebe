@@ -35,6 +35,12 @@ msgstr "Se lansează kernel-ul Pyodide"
 msgid "Launching from mybinder.org"
 msgstr "Se lansează de la mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "Pornește Thebe"
+
+msgid "Live Code"
+msgstr "Cod Live"
+
 msgid "Loading Thebe..."
 msgstr "Se încarcă Thebe..."
 

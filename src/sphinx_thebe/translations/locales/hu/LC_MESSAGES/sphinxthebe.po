@@ -35,6 +35,12 @@ msgstr "Pyodide kernel indítása"
 msgid "Launching from mybinder.org"
 msgstr "Indítás a mybinder.org-ból"
 
+msgid "Launch Thebe"
+msgstr "Thebe indítása"
+
+msgid "Live Code"
+msgstr "Élő Kód"
+
 msgid "Loading Thebe..."
 msgstr "Thebe betöltése..."
 

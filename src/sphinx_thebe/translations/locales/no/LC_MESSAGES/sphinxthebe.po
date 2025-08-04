@@ -35,6 +35,12 @@ msgstr "Starter Pyodide-kjerne"
 msgid "Launching from mybinder.org"
 msgstr "Starter fra mybinder.org"
 
+msgid "Launch Thebe"
+msgstr "Start Thebe"
+
+msgid "Live Code"
+msgstr "Live Kode"
+
 msgid "Loading Thebe..."
 msgstr "Laster Thebe..."
 
