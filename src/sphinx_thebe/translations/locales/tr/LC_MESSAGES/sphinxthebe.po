@@ -53,6 +53,12 @@ msgstr "yeniden başlat ve hepsini çalıştır"
 msgid "restart the kernel and run all cells"
 msgstr "çekirdeği yeniden başlat ve tüm hücreleri çalıştır"
 
+msgid "run this cell"
+msgstr "bu hücreyi çalıştır"
+
+msgid "run"
+msgstr "çalıştır"
+
 msgid "run all"
 msgstr "hepsini çalıştır"
 

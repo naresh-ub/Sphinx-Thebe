@@ -53,6 +53,12 @@ msgstr "repornește și rulează tot"
 msgid "restart the kernel and run all cells"
 msgstr "repornește kernelul și rulează toate celulele"
 
+msgid "run this cell"
+msgstr "rulează această celulă"
+
+msgid "run"
+msgstr "rulează"
+
 msgid "run all"
 msgstr "rulează tot"
 

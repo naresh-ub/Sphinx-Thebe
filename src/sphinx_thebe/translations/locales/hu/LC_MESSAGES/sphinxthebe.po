@@ -53,6 +53,12 @@ msgstr "újraindítás és mindent futtat"
 msgid "restart the kernel and run all cells"
 msgstr "kernel újraindítása és minden cella futtatása"
 
+msgid "run this cell"
+msgstr "ezt a cellát futtatni"
+
+msgid "run"
+msgstr "futtat"
+
 msgid "run all"
 msgstr "összes futtatása"
 

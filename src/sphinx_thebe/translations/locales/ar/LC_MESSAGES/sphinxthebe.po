@@ -53,6 +53,12 @@ msgstr "إعادة التشغيل وتشغيل الكل"
 msgid "restart the kernel and run all cells"
 msgstr "إعادة تشغيل النواة وتشغيل جميع الخلايا"
 
+msgid "run this cell"
+msgstr "تشغيل هذه الخلية"
+
+msgid "run"
+msgstr "تشغيل"
+
 msgid "run all"
 msgstr "تشغيل الكل"
 

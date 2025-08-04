@@ -53,6 +53,12 @@ msgstr "재시작하고 모두 실행"
 msgid "restart the kernel and run all cells"
 msgstr "커널을 다시 시작하고 모든 셀 실행"
 
+msgid "run this cell"
+msgstr "이 셀 실행"
+
+msgid "run"
+msgstr "실행"
+
 msgid "run all"
 msgstr "모두 실행"
 

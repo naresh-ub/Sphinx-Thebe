@@ -107,6 +107,8 @@ def init_thebe_core(app, env, docnames):
     app.add_js_file(None, body=f"let thebeLaunchingBinder = '{translate('Launching from mybinder.org')}';")
     app.add_js_file(None, body=f"let thebeLoadingCDN = '{translate('Loading thebe from CDN...')}';")
     app.add_js_file(None, body=f"let thebeNoResults = '{translate('No results')}';")
+    app.add_js_file(None, body=f"let thebeRun = '{translate('run')}';")
+    app.add_js_file(None, body=f"let thebeRunCell = '{translate('run this cell')}';")
     app.add_js_file(None, body=f"let thebeRunAll = '{translate('run all')}';")
     app.add_js_file(None, body=f"let thebeRunAllCells = '{translate('run all cells')}';")
     app.add_js_file(None, body=f"let thebeRestartRun = '{translate('restart & run all')}';")
@@ -128,11 +130,21 @@ def init_thebe_core(app, env, docnames):
                     const text = el.textContent?.trim();
                     const title = el.title?.trim();
 
-                    if (text === "run all") {
-                        if (!el.hasAttribute('data-i18n-processed')) {
+                    if (!el.hasAttribute('data-i18n-processed')) {
+                        if (text === "run") {
+                            el.textContent = thebeRun;
+                            el.title = thebeRunCell;
+                            el.setAttribute('data-i18n-processed', 'run');
+                        }
+                        if (text === "run all") {
                             el.textContent = thebeRunAll;
                             el.title = thebeRunAllCells;
                             el.setAttribute('data-i18n-processed', 'run-all');
+                        }
+                        if (text === "restart & run all") {
+                            el.textContent = thebeRestartRun;
+                            el.title = thebeRestartRunCells;
+                            el.setAttribute('data-i18n-processed', 'restart-run-all');
                         }
                     }
                 });

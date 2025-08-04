@@ -53,6 +53,12 @@ msgstr "הפעל מחדש והרץ הכל"
 msgid "restart the kernel and run all cells"
 msgstr "הפעל מחדש את הליבה והרץ את כל התאים"
 
+msgid "run this cell"
+msgstr "הרץ את התא הזה"
+
+msgid "run"
+msgstr "הרץ"
+
 msgid "run all"
 msgstr "הרץ הכל"
 

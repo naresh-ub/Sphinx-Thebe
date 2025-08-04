@@ -53,6 +53,12 @@ msgstr "перезапустить и выполнить все"
 msgid "restart the kernel and run all cells"
 msgstr "перезапустить ядро и выполнить все ячейки"
 
+msgid "run this cell"
+msgstr "выполнить эту ячейку"
+
+msgid "run"
+msgstr "выполнить"
+
 msgid "run all"
 msgstr "выполнить все"
 

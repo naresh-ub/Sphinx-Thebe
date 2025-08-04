@@ -53,6 +53,12 @@ msgstr "anzisha upya na endesha zote"
 msgid "restart the kernel and run all cells"
 msgstr "anzisha upya kiini na endesha seli zote"
 
+msgid "run this cell"
+msgstr "endesha seli hii"
+
+msgid "run"
+msgstr "endesha"
+
 msgid "run all"
 msgstr "endesha zote"
 

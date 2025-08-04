@@ -53,6 +53,12 @@ msgstr "khởi động lại và chạy tất cả"
 msgid "restart the kernel and run all cells"
 msgstr "khởi động lại kernel và chạy tất cả ô"
 
+msgid "run this cell"
+msgstr "chạy ô này"
+
+msgid "run"
+msgstr "chạy"
+
 msgid "run all"
 msgstr "chạy tất cả"
 

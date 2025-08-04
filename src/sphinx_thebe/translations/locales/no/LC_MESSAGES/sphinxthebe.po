@@ -53,6 +53,12 @@ msgstr "start på nytt og kjør alle"
 msgid "restart the kernel and run all cells"
 msgstr "start kjernen på nytt og kjør alle celler"
 
+msgid "run this cell"
+msgstr "kjør denne cellen"
+
+msgid "run"
+msgstr "kjør"
+
 msgid "run all"
 msgstr "kjør alle"
 

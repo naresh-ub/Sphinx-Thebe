@@ -53,6 +53,12 @@ msgstr "restartovat a spustit vše"
 msgid "restart the kernel and run all cells"
 msgstr "restartovat jádro a spustit všechny buňky"
 
+msgid "run this cell"
+msgstr "spustit tuto buňku"
+
+msgid "run"
+msgstr "spustit"
+
 msgid "run all"
 msgstr "spustit vše"
 

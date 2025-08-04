@@ -53,6 +53,12 @@ msgstr "restartuj i uruchom wszystko"
 msgid "restart the kernel and run all cells"
 msgstr "uruchom ponownie jądro i wykonaj wszystkie komórki"
 
+msgid "run this cell"
+msgstr "uruchom tę komórkę"
+
+msgid "run"
+msgstr "uruchom"
+
 msgid "run all"
 msgstr "uruchom wszystkie"
 

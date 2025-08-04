@@ -53,6 +53,12 @@ msgstr "reiniciar y ejecutar todo"
 msgid "restart the kernel and run all cells"
 msgstr "reiniciar el kernel y ejecutar todas las celdas"
 
+msgid "run this cell"
+msgstr "ejecutar esta celda"
+
+msgid "run"
+msgstr "ejecutar"
+
 msgid "run all"
 msgstr "ejecutar todo"
 

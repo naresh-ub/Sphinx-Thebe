@@ -53,6 +53,12 @@ msgstr "再起動してすべて実行"
 msgid "restart the kernel and run all cells"
 msgstr "カーネルを再起動してすべてのセルを実行"
 
+msgid "run this cell"
+msgstr "このセルを実行"
+
+msgid "run"
+msgstr "実行"
+
 msgid "run all"
 msgstr "すべて実行"
 

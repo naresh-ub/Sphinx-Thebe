@@ -53,6 +53,12 @@ msgstr "راه‌اندازی مجدد و اجرای همه"
 msgid "restart the kernel and run all cells"
 msgstr "راه‌اندازی مجدد هسته و اجرای همه سلول‌ها"
 
+msgid "run this cell"
+msgstr "اجرای این سلول"
+
+msgid "run"
+msgstr "اجرا"
+
 msgid "run all"
 msgstr "اجرای همه"
 

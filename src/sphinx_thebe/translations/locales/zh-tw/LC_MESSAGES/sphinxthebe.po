@@ -53,6 +53,12 @@ msgstr "重新啟動並執行全部"
 msgid "restart the kernel and run all cells"
 msgstr "重新啟動核心並執行所有儲存格"
 
+msgid "run this cell"
+msgstr "執行此儲存格"
+
+msgid "run"
+msgstr "執行"
+
 msgid "run all"
 msgstr "執行全部"
 
