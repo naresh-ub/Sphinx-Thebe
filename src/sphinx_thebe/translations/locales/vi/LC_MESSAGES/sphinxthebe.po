@@ -47,6 +47,18 @@ msgstr "Không có kết quả"
 msgid "Python interaction ready!"
 msgstr "Tương tác Python đã sẵn sàng!"
 
+msgid "restart & run all"
+msgstr "khởi động lại và chạy tất cả"
+
+msgid "restart the kernel and run all cells"
+msgstr "khởi động lại kernel và chạy tất cả ô"
+
+msgid "run all"
+msgstr "chạy tất cả"
+
+msgid "run all cells"
+msgstr "chạy tất cả ô"
+
 msgid "Run code"
 msgstr "Chạy mã"
 

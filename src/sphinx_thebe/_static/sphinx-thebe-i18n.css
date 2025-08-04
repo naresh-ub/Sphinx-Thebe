@@ -18,3 +18,47 @@
     font-size: 13px !important;
     display: block;
 }
+
+/* Override "run all" button text */
+[data-i18n-run-all] {
+    font-size: 0 !important; /* Hide original text */
+}
+
+[data-i18n-run-all]::before {
+    content: attr(data-i18n-run-all, "run all") !important;
+    font-size: inherit !important;
+    display: inline;
+}
+
+/* Override "run all cells" button text */
+[data-i18n-run-all-cells] {
+    font-size: 0 !important; /* Hide original text */
+}
+
+[data-i18n-run-all-cells]::before {
+    content: attr(data-i18n-run-all-cells, "run all cells") !important;
+    font-size: inherit !important;
+    display: inline;
+}
+
+/* Override "restart & run all" button text */
+[data-i18n-restart-run] {
+    font-size: 0 !important; /* Hide original text */
+}
+
+[data-i18n-restart-run]::before {
+    content: attr(data-i18n-restart-run, "restart & run all") !important;
+    font-size: inherit !important;
+    display: inline;
+}
+
+/* Override "restart the kernel and run all cells" button text */
+[data-i18n-restart-run-cells] {
+    font-size: 0 !important; /* Hide original text */
+}
+
+[data-i18n-restart-run-cells]::before {
+    content: attr(data-i18n-restart-run-cells, "restart the kernel and run all cells") !important;
+    font-size: inherit !important;
+    display: inline;
+}

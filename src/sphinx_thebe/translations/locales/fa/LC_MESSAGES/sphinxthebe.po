@@ -47,6 +47,18 @@ msgstr "نتیجه‌ای یافت نشد"
 msgid "Python interaction ready!"
 msgstr "تعامل Python آماده است!"
 
+msgid "restart & run all"
+msgstr "راه‌اندازی مجدد و اجرای همه"
+
+msgid "restart the kernel and run all cells"
+msgstr "راه‌اندازی مجدد هسته و اجرای همه سلول‌ها"
+
+msgid "run all"
+msgstr "اجرای همه"
+
+msgid "run all cells"
+msgstr "اجرای همه سلول‌ها"
+
 msgid "Run code"
 msgstr "اجرای کد"
 

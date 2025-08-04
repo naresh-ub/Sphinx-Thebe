@@ -47,6 +47,18 @@ msgstr "Результатов нет"
 msgid "Python interaction ready!"
 msgstr "Взаимодействие Python готово!"
 
+msgid "restart & run all"
+msgstr "перезапустить и выполнить все"
+
+msgid "restart the kernel and run all cells"
+msgstr "перезапустить ядро и выполнить все ячейки"
+
+msgid "run all"
+msgstr "выполнить все"
+
+msgid "run all cells"
+msgstr "выполнить все ячейки"
+
 msgid "Run code"
 msgstr "Запустить код"
 

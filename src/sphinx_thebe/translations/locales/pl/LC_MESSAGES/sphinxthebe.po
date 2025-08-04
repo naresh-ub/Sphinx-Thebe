@@ -47,6 +47,18 @@ msgstr "Brak wyników"
 msgid "Python interaction ready!"
 msgstr "Interakcja Python gotowa!"
 
+msgid "restart & run all"
+msgstr "restartuj i uruchom wszystko"
+
+msgid "restart the kernel and run all cells"
+msgstr "uruchom ponownie jądro i wykonaj wszystkie komórki"
+
+msgid "run all"
+msgstr "uruchom wszystkie"
+
+msgid "run all cells"
+msgstr "uruchom wszystkie komórki"
+
 msgid "Run code"
 msgstr "Uruchom kod"
 

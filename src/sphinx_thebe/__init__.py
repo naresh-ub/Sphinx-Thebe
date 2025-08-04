@@ -107,14 +107,47 @@ def init_thebe_core(app, env, docnames):
     app.add_js_file(None, body=f"let thebeLaunchingBinder = '{translate('Launching from mybinder.org')}';")
     app.add_js_file(None, body=f"let thebeLoadingCDN = '{translate('Loading thebe from CDN...')}';")
     app.add_js_file(None, body=f"let thebeNoResults = '{translate('No results')}';")
+    app.add_js_file(None, body=f"let thebeRunAll = '{translate('run all')}';")
+    app.add_js_file(None, body=f"let thebeRunAllCells = '{translate('run all cells')}';")
+    app.add_js_file(None, body=f"let thebeRestartRun = '{translate('restart & run all')}';")
+    app.add_js_file(None, body=f"let thebeRestartRunCells = '{translate('restart the kernel and run all cells')}';")
 
     # Minimal i18n injection for CSS overrides
     app.add_js_file(None, body="""
         document.addEventListener('DOMContentLoaded', function() {
             const observer = new MutationObserver(function() {
+                // Handle "No results" text
                 document.querySelectorAll('.lm-CommandPalette-content, .jp-search-no-results').forEach(el => {
                     if (!el.hasAttribute('data-i18n-no-results')) {
                         el.setAttribute('data-i18n-no-results', thebeNoResults);
+                    }
+                });
+                
+                // Handle "run all" text
+                document.querySelectorAll('[title*="run all"]:not([title*="cells"]):not([title*="restart"])').forEach(el => {
+                    if (!el.hasAttribute('data-i18n-run-all')) {
+                        el.setAttribute('data-i18n-run-all', thebeRunAll);
+                    }
+                });
+                
+                // Handle "run all cells" text
+                document.querySelectorAll('[title*="run all cells"]').forEach(el => {
+                    if (!el.hasAttribute('data-i18n-run-all-cells')) {
+                        el.setAttribute('data-i18n-run-all-cells', thebeRunAllCells);
+                    }
+                });
+                
+                // Handle "restart & run all" text
+                document.querySelectorAll('[title*="restart"][title*="run all"]:not([title*="cells"])').forEach(el => {
+                    if (!el.hasAttribute('data-i18n-restart-run')) {
+                        el.setAttribute('data-i18n-restart-run', thebeRestartRun);
+                    }
+                });
+                
+                // Handle "restart the kernel and run all cells" text
+                document.querySelectorAll('[title*="restart"][title*="kernel"][title*="run all cells"]').forEach(el => {
+                    if (!el.hasAttribute('data-i18n-restart-run-cells')) {
+                        el.setAttribute('data-i18n-restart-run-cells', thebeRestartRunCells);
                     }
                 });
             });

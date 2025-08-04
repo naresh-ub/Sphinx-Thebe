@@ -47,6 +47,18 @@ msgstr "Tiada hasil"
 msgid "Python interaction ready!"
 msgstr "Interaksi Python sedia!"
 
+msgid "restart & run all"
+msgstr "mula semula dan jalankan semua"
+
+msgid "restart the kernel and run all cells"
+msgstr "mula semula kernel dan jalankan semua sel"
+
+msgid "run all"
+msgstr "jalankan semua"
+
+msgid "run all cells"
+msgstr "jalankan semua sel"
+
 msgid "Run code"
 msgstr "Jalankan kod"
 

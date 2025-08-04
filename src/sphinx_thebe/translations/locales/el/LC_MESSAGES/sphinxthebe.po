@@ -47,6 +47,18 @@ msgstr "Κανένα αποτέλεσμα"
 msgid "Python interaction ready!"
 msgstr "Αλληλεπίδραση Python έτοιμη!"
 
+msgid "restart & run all"
+msgstr "επανεκκίνηση και εκτέλεση όλων"
+
+msgid "restart the kernel and run all cells"
+msgstr "επανεκκίνηση του πυρήνα και εκτέλεση όλων των κελιών"
+
+msgid "run all"
+msgstr "εκτέλεση όλων"
+
+msgid "run all cells"
+msgstr "εκτέλεση όλων των κελιών"
+
 msgid "Run code"
 msgstr "Εκτέλεση κώδικα"
 

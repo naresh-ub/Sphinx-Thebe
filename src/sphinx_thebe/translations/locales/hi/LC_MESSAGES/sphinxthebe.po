@@ -47,6 +47,18 @@ msgstr "कोई परिणाम नहीं"
 msgid "Python interaction ready!"
 msgstr "Python इंटरैक्शन तैयार है!"
 
+msgid "restart & run all"
+msgstr "रीस्टार्ट करें और सभी चलाएं"
+
+msgid "restart the kernel and run all cells"
+msgstr "कर्नेल को पुनः आरंभ करें और सभी सेल चलाएं"
+
+msgid "run all"
+msgstr "सभी चलाएं"
+
+msgid "run all cells"
+msgstr "सभी सेल चलाएं"
+
 msgid "Run code"
 msgstr "कोड चलाएं"
 

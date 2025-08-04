@@ -47,6 +47,18 @@ msgstr "Žádné výsledky"
 msgid "Python interaction ready!"
 msgstr "Interakce Python připravena!"
 
+msgid "restart & run all"
+msgstr "restartovat a spustit vše"
+
+msgid "restart the kernel and run all cells"
+msgstr "restartovat jádro a spustit všechny buňky"
+
+msgid "run all"
+msgstr "spustit vše"
+
+msgid "run all cells"
+msgstr "spustit všechny buňky"
+
 msgid "Run code"
 msgstr "Spustit kód"
 

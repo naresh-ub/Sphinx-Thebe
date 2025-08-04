@@ -47,6 +47,18 @@ msgstr "ไม่มีผลลัพธ์"
 msgid "Python interaction ready!"
 msgstr "การโต้ตอบ Python พร้อมแล้ว!"
 
+msgid "restart & run all"
+msgstr "รีสตาร์ทและรันทั้งหมด"
+
+msgid "restart the kernel and run all cells"
+msgstr "รีสตาร์ทเคอร์เนลและรันเซลล์ทั้งหมด"
+
+msgid "run all"
+msgstr "รันทั้งหมด"
+
+msgid "run all cells"
+msgstr "รันเซลล์ทั้งหมด"
+
 msgid "Run code"
 msgstr "รันโค้ด"
 

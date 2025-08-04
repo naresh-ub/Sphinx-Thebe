@@ -47,6 +47,18 @@ msgstr "無結果"
 msgid "Python interaction ready!"
 msgstr "Python 交互準備就緒！"
 
+msgid "restart & run all"
+msgstr "重新啟動並執行全部"
+
+msgid "restart the kernel and run all cells"
+msgstr "重新啟動核心並執行所有儲存格"
+
+msgid "run all"
+msgstr "執行全部"
+
+msgid "run all cells"
+msgstr "執行所有儲存格"
+
 msgid "Run code"
 msgstr "運行代碼"
 

@@ -47,6 +47,18 @@ msgstr "Nincs eredmény"
 msgid "Python interaction ready!"
 msgstr "Python interakció kész!"
 
+msgid "restart & run all"
+msgstr "újraindítás és mindent futtat"
+
+msgid "restart the kernel and run all cells"
+msgstr "kernel újraindítása és minden cella futtatása"
+
+msgid "run all"
+msgstr "összes futtatása"
+
+msgid "run all cells"
+msgstr "minden cella futtatása"
+
 msgid "Run code"
 msgstr "Kód futtatása"
 

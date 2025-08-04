@@ -47,6 +47,18 @@ msgstr "אין תוצאות"
 msgid "Python interaction ready!"
 msgstr "אינטראקציה של Python מוכנה!"
 
+msgid "restart & run all"
+msgstr "הפעל מחדש והרץ הכל"
+
+msgid "restart the kernel and run all cells"
+msgstr "הפעל מחדש את הליבה והרץ את כל התאים"
+
+msgid "run all"
+msgstr "הרץ הכל"
+
+msgid "run all cells"
+msgstr "הרץ את כל התאים"
+
 msgid "Run code"
 msgstr "הרץ קוד"
 

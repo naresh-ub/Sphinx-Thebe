@@ -47,6 +47,18 @@ msgstr "결과 없음"
 msgid "Python interaction ready!"
 msgstr "Python 상호작용 준비 완료!"
 
+msgid "restart & run all"
+msgstr "재시작하고 모두 실행"
+
+msgid "restart the kernel and run all cells"
+msgstr "커널을 다시 시작하고 모든 셀 실행"
+
+msgid "run all"
+msgstr "모두 실행"
+
+msgid "run all cells"
+msgstr "모든 셀 실행"
+
 msgid "Run code"
 msgstr "코드 실행"
 

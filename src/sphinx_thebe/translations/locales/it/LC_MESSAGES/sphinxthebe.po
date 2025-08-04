@@ -47,6 +47,18 @@ msgstr "Nessun risultato"
 msgid "Python interaction ready!"
 msgstr "Interazione Python pronta!"
 
+msgid "restart & run all"
+msgstr "riavvia ed esegui tutto"
+
+msgid "restart the kernel and run all cells"
+msgstr "riavvia il kernel ed esegui tutte le celle"
+
+msgid "run all"
+msgstr "esegui tutto"
+
+msgid "run all cells"
+msgstr "esegui tutte le celle"
+
 msgid "Run code"
 msgstr "Esegui codice"
 

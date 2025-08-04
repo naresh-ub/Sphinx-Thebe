@@ -47,6 +47,18 @@ msgstr "Sonuç yok"
 msgid "Python interaction ready!"
 msgstr "Python etkileşimi hazır!"
 
+msgid "restart & run all"
+msgstr "yeniden başlat ve hepsini çalıştır"
+
+msgid "restart the kernel and run all cells"
+msgstr "çekirdeği yeniden başlat ve tüm hücreleri çalıştır"
+
+msgid "run all"
+msgstr "hepsini çalıştır"
+
+msgid "run all cells"
+msgstr "tüm hücreleri çalıştır"
+
 msgid "Run code"
 msgstr "Kodu çalıştır"
 

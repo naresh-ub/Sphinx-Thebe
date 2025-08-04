@@ -47,6 +47,18 @@ msgstr "Niciun rezultat"
 msgid "Python interaction ready!"
 msgstr "Interacțiunea Python este gata!"
 
+msgid "restart & run all"
+msgstr "repornește și rulează tot"
+
+msgid "restart the kernel and run all cells"
+msgstr "repornește kernelul și rulează toate celulele"
+
+msgid "run all"
+msgstr "rulează tot"
+
+msgid "run all cells"
+msgstr "rulează toate celulele"
+
 msgid "Run code"
 msgstr "Rulează codul"
 

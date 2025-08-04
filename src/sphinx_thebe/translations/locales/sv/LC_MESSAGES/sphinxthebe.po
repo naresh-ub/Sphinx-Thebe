@@ -47,6 +47,18 @@ msgstr "Inga resultat"
 msgid "Python interaction ready!"
 msgstr "Python-interaktion redo!"
 
+msgid "restart & run all"
+msgstr "starta om och kör alla"
+
+msgid "restart the kernel and run all cells"
+msgstr "starta om kärnan och kör alla celler"
+
+msgid "run all"
+msgstr "kör alla"
+
+msgid "run all cells"
+msgstr "kör alla celler"
+
 msgid "Run code"
 msgstr "Kör kod"
 

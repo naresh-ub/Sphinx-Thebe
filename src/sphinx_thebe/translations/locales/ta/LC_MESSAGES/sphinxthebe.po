@@ -47,6 +47,18 @@ msgstr "முடிவுகள் இல்லை"
 msgid "Python interaction ready!"
 msgstr "Python இடைச்செயல் தயார்!"
 
+msgid "restart & run all"
+msgstr "மறுதொடக்கம் செய்து அனைத்தையும் இயக்கவும்"
+
+msgid "restart the kernel and run all cells"
+msgstr "கர்னலை மீண்டும் தொடங்கி அனைத்து செல்களையும் இயக்கவும்"
+
+msgid "run all"
+msgstr "அனைத்தையும் இயக்கவும்"
+
+msgid "run all cells"
+msgstr "அனைத்து செல்களையும் இயக்கவும்"
+
 msgid "Run code"
 msgstr "குறியீட்டை இயக்கவும்"
 

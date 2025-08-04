@@ -47,6 +47,18 @@ msgstr "結果なし"
 msgid "Python interaction ready!"
 msgstr "Python インタラクション準備完了！"
 
+msgid "restart & run all"
+msgstr "再起動してすべて実行"
+
+msgid "restart the kernel and run all cells"
+msgstr "カーネルを再起動してすべてのセルを実行"
+
+msgid "run all"
+msgstr "すべて実行"
+
+msgid "run all cells"
+msgstr "すべてのセルを実行"
+
 msgid "Run code"
 msgstr "コードを実行"
 
