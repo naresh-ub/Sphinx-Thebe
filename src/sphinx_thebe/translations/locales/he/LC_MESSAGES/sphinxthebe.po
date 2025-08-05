@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "הוסף תא"
+
+msgid "adds a new cell underneath"
+msgstr "מוסיף תא חדש מתחת"
+
+msgid "clear"
+msgstr "נקה"
+
+msgid "clear the output of the cell"
+msgstr "נקה את הפלט של התא"
+
+msgid "delete cell"
+msgstr "מחק תא"
+
+msgid "delete this cell"
+msgstr "מחק את התא הזה"
+
+msgid "Initializing Thebe"
+msgstr "מאתחל את Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "מפעיל ליבת Pyodide"
+
+msgid "Launching from mybinder.org"
+msgstr "מפעיל מ-mybinder.org"
+
+msgid "Launch Thebe"
+msgstr "הפעל את Thebe"
+
+msgid "Live Code"
+msgstr "קוד חי"
+
+msgid "Loading Thebe..."
+msgstr "טוען את Thebe..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "טוען את Thebe מ-CDN..."
+
+msgid "No results"
+msgstr "אין תוצאות"
+
+msgid "Python interaction ready!"
+msgstr "אינטראקציה של Python מוכנה!"
+
+msgid "restart & run all"
+msgstr "הפעל מחדש והרץ הכל"
+
+msgid "restart the kernel and run all cells"
+msgstr "הפעל מחדש את הליבה והרץ את כל התאים"
+
+msgid "run this cell"
+msgstr "הרץ את התא הזה"
+
+msgid "run"
+msgstr "הרץ"
+
+msgid "run all"
+msgstr "הרץ הכל"
+
+msgid "run all cells"
+msgstr "הרץ את כל התאים"
+
+msgid "Run code"
+msgstr "הרץ קוד"
+
+msgid "Running pre-initialized cells..."
+msgstr "מריץ תאים שאותחלו מראש..."
+
+msgid "Waiting for packages to load..."
+msgstr "ממתין לטעינת חבילות..."

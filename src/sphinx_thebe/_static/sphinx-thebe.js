@@ -33,7 +33,7 @@ var configureThebe = () => {
       .addClass("thebe-status-" + data.status)
       .find(".loading-text")
       .html(
-        "<span class='launch_msg'>Launching from mybinder.org: </span><span class='status'>" +
+        `<span class="launch_msg">${thebeLaunchingBinder}: </span><span class="status">` +
           data.status +
           "</span>"
       );
@@ -91,8 +91,8 @@ var modifyDOMForThebe = () => {
 var initThebe = () => {
   // Load thebe dynamically if it's not already loaded
   if (typeof thebelab === "undefined") {
-    console.log("[sphinx-thebe]: Loading thebe from CDN...");
-    $(".thebe-launch-button ").text("Loading thebe from CDN...");
+    console.log("[sphinx-thebe]: Loading Thebe from CDN...");
+    $(".thebe-launch-button ").text(thebeLoadingCDN);
 
     const script = document.createElement("script");
     script.src = `${THEBE_JS_URL}`;

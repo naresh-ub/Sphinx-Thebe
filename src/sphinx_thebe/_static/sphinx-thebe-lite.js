@@ -69,15 +69,15 @@ function finalizeCodeCells(cells) {
   cells.forEach((codeCell, index) => {
     const addCell = createButton(
       ["thebe-button"],
-      "adds a new cell underneath",
-      "add cell"
+      thebeAddNewCell,
+      thebeAddCell
     );
     addToThebeControls(codeCell, addCell);
 
     const clear = createButton(
       ["thebe-button"],
-      "clear the output of the cell",
-      "clear"
+      thebeClearOutput,
+      thebeClear
     );
     addToThebeControls(codeCell, clear);
 
@@ -111,8 +111,8 @@ function finalizeCodeCells(cells) {
 
       const deleteCell = createButton(
         ["thebe-button"],
-        "deletes this cell",
-        "delete cell"
+        thebeDeleteThisCell,
+        thebeDeleteCell
       );
       addToThebeControls(newCell, deleteCell);
       deleteCell.onclick = () => {
@@ -147,20 +147,20 @@ var configureThebe = (thebe_config_obj) => {
   thebe_config = thebe_config_obj;
 
   // Update thebe buttons with loading message
-  updateThebeButtonStatus("Initializing Thebe");
+  updateThebeButtonStatus(thebeInitializingThebe);
 
   // Set thebe event hooks
   thebelab.on("status", function (evt, data) {
     console.log("Status changed:", data.status, data.message);
 
     updateThebeButtonStatus(
-      `<span class='launch_msg'>Launching Pyodide kernel: </span><span class='status'>` +
+      `<span class='launch_msg'>${thebeLaunchingPyodide}: </span><span class='status'>` +
         data.status +
         "</span>"
     );
 
     if (data.status === "attached") {
-      updateThebeButtonStatus(`Waiting for packages to load...`);
+      updateThebeButtonStatus(thebeWaitingForPackages);
 
       thebelab.events.listeners.status.clear(); // Remove further status message handling
     }
@@ -408,7 +408,7 @@ var initThebe = async () => {
   );
 
   console.log("[sphinx-thebe]: Loading thebe...");
-  document.querySelector(".thebe-launch-button ").innerText = "Loading thebe...";
+  document.querySelector(".thebe-launch-button ").innerText = thebeLoadingThebe;
 
   const THEBE_CONFIG = JSON.parse(
     document.querySelector("script[type=\"text/x-thebe-config\"]").text
@@ -471,11 +471,11 @@ var initThebe = async () => {
     code: `import ipykernel; ipykernel.version_info = (0,0); import micropip; await micropip.install("ipywidgets")`,
   }).done;
 
-  updateThebeButtonStatus("Running pre-intialized cells...");
+  updateThebeButtonStatus(thebeRunningCells);
 
   await runInitCells();
 
-  updateThebeButtonStatus("Python interaction ready!", false);
+  updateThebeButtonStatus(thebePythonReady, false);
 
   moveHideInputOutput();
 };

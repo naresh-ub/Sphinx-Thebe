@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "přidat buňku"
+
+msgid "adds a new cell underneath"
+msgstr "přidá novou buňku pod"
+
+msgid "clear"
+msgstr "vymazat"
+
+msgid "clear the output of the cell"
+msgstr "vymazat výstup buňky"
+
+msgid "delete cell"
+msgstr "smazat buňku"
+
+msgid "delete this cell"
+msgstr "smazat tuto buňku"
+
+msgid "Initializing Thebe"
+msgstr "Inicializace Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Spouštění jádra Pyodide"
+
+msgid "Launching from mybinder.org"
+msgstr "Spouštění z mybinder.org"
+
+msgid "Launch Thebe"
+msgstr "Spustit Thebe"
+
+msgid "Live Code"
+msgstr "Živý Kód"
+
+msgid "Loading Thebe..."
+msgstr "Načítání Thebe..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "Načítání Thebe z CDN..."
+
+msgid "No results"
+msgstr "Žádné výsledky"
+
+msgid "Python interaction ready!"
+msgstr "Interakce Python připravena!"
+
+msgid "restart & run all"
+msgstr "restartovat a spustit vše"
+
+msgid "restart the kernel and run all cells"
+msgstr "restartovat jádro a spustit všechny buňky"
+
+msgid "run this cell"
+msgstr "spustit tuto buňku"
+
+msgid "run"
+msgstr "spustit"
+
+msgid "run all"
+msgstr "spustit vše"
+
+msgid "run all cells"
+msgstr "spustit všechny buňky"
+
+msgid "Run code"
+msgstr "Spustit kód"
+
+msgid "Running pre-initialized cells..."
+msgstr "Spouštění předem inicializovaných buněk..."
+
+msgid "Waiting for packages to load..."
+msgstr "Čekání na načtení balíčků..."

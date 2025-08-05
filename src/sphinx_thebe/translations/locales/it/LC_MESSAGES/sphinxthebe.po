@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "aggiungi cella"
+
+msgid "adds a new cell underneath"
+msgstr "aggiunge una nuova cella sotto"
+
+msgid "clear"
+msgstr "cancella"
+
+msgid "clear the output of the cell"
+msgstr "cancella l'output della cella"
+
+msgid "delete cell"
+msgstr "elimina cella"
+
+msgid "delete this cell"
+msgstr "elimina questa cella"
+
+msgid "Initializing Thebe"
+msgstr "Inizializzazione di Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Avvio del kernel Pyodide"
+
+msgid "Launching from mybinder.org"
+msgstr "Avvio da mybinder.org"
+
+msgid "Launch Thebe"
+msgstr "Avvia Thebe"
+
+msgid "Live Code"
+msgstr "Codice Live"
+
+msgid "Loading Thebe..."
+msgstr "Caricamento di Thebe..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "Caricamento di Thebe da CDN..."
+
+msgid "No results"
+msgstr "Nessun risultato"
+
+msgid "Python interaction ready!"
+msgstr "Interazione Python pronta!"
+
+msgid "restart & run all"
+msgstr "riavvia ed esegui tutto"
+
+msgid "restart the kernel and run all cells"
+msgstr "riavvia il kernel ed esegui tutte le celle"
+
+msgid "run this cell"
+msgstr "esegui questa cella"
+
+msgid "run"
+msgstr "esegui"
+
+msgid "run all"
+msgstr "esegui tutto"
+
+msgid "run all cells"
+msgstr "esegui tutte le celle"
+
+msgid "Run code"
+msgstr "Esegui codice"
+
+msgid "Running pre-initialized cells..."
+msgstr "Esecuzione delle celle pre-inizializzate..."
+
+msgid "Waiting for packages to load..."
+msgstr "In attesa del caricamento dei pacchetti..."

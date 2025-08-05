@@ -1,6 +1,6 @@
 # Instructions for creating a new release
 
-Spinx-Copybutton is [hosted on the pypi repository](https://pypi.org/project/sphinx-thebe/).
+Sphinx-Thebe is [hosted on the pypi repository](https://pypi.org/project/sphinx-thebe/).
 To create a new release of sphinx-thebe, you need to do these things:
 
 ## Before you start

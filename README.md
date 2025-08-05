@@ -9,10 +9,10 @@ See [the sphinx-thebe documentation](https://sphinx-thebe.readthedocs.io/en/late
 
 ## Install
 
-To install `sphinx-thebe` first clonse and install it:
+To install `sphinx-thebe` first install it:
 
 ```
-pip install sphinx-thebe
+pip install git+https://github.com/TeachBooks/Sphinx-Thebe
 ```
 
 Then, add it to your Sphinx site's `conf.py` file:

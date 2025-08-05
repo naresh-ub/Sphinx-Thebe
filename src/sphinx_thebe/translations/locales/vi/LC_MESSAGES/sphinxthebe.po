@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "thêm ô"
+
+msgid "adds a new cell underneath"
+msgstr "thêm ô mới ở bên dưới"
+
+msgid "clear"
+msgstr "xóa"
+
+msgid "clear the output of the cell"
+msgstr "xóa đầu ra của ô"
+
+msgid "delete cell"
+msgstr "xóa ô"
+
+msgid "delete this cell"
+msgstr "xóa ô này"
+
+msgid "Initializing Thebe"
+msgstr "Đang khởi tạo Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Đang khởi chạy kernel Pyodide"
+
+msgid "Launching from mybinder.org"
+msgstr "Đang khởi chạy từ mybinder.org"
+
+msgid "Launch Thebe"
+msgstr "Khởi chạy Thebe"
+
+msgid "Live Code"
+msgstr "Mã Trực Tiếp"
+
+msgid "Loading Thebe..."
+msgstr "Đang tải Thebe..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "Đang tải Thebe từ CDN..."
+
+msgid "No results"
+msgstr "Không có kết quả"
+
+msgid "Python interaction ready!"
+msgstr "Tương tác Python đã sẵn sàng!"
+
+msgid "restart & run all"
+msgstr "khởi động lại và chạy tất cả"
+
+msgid "restart the kernel and run all cells"
+msgstr "khởi động lại kernel và chạy tất cả ô"
+
+msgid "run this cell"
+msgstr "chạy ô này"
+
+msgid "run"
+msgstr "chạy"
+
+msgid "run all"
+msgstr "chạy tất cả"
+
+msgid "run all cells"
+msgstr "chạy tất cả ô"
+
+msgid "Run code"
+msgstr "Chạy mã"
+
+msgid "Running pre-initialized cells..."
+msgstr "Đang chạy các ô đã khởi tạo trước..."
+
+msgid "Waiting for packages to load..."
+msgstr "Đang chờ tải các gói..."

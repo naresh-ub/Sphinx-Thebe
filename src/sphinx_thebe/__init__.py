@@ -13,6 +13,10 @@ import shutil
 
 from wcmatch import glob
 
+from sphinx.locale import get_translation
+MESSAGE_CATALOG_NAME = "sphinxthebe"
+translate = get_translation(MESSAGE_CATALOG_NAME)
+
 #from ._version import version as __version__
 
 __version__ = "0.3.1"
@@ -86,6 +90,33 @@ def init_thebe_core(app, env, docnames):
     in order to speed up page load times.
     """
     config_thebe = app.config["thebe_config"]
+
+    # add scripts to the page for translation and configuration
+    app.add_js_file(None, body=f"let thebePythonReady = '{translate('Python interaction ready!')}';")
+    app.add_js_file(None, body=f"let thebeRunningCells = '{translate('Running pre-initialized cells...')}';")
+    app.add_js_file(None, body=f"let thebeLoadingThebe = '{translate('Loading Thebe...')}';")
+    app.add_js_file(None, body=f"let thebeWaitingForPackages = '{translate('Waiting for packages to load...')}';")
+    app.add_js_file(None, body=f"let thebeLaunchingPyodide = '{translate('Launching Pyodide kernel')}';")
+    app.add_js_file(None, body=f"let thebeInitializingThebe = '{translate('Initializing Thebe')}';")
+    app.add_js_file(None, body=f"let thebeDeleteCell = '{translate('delete cell')}';")
+    app.add_js_file(None, body=f"let thebeDeleteThisCell = '{translate('delete this cell')}';")
+    app.add_js_file(None, body=f"let thebeClear = '{translate('clear')}';")
+    app.add_js_file(None, body=f"let thebeClearOutput = '{translate('clear the output of the cell')}';")
+    app.add_js_file(None, body=f"let thebeAddCell = '{translate('add cell')}';")
+    app.add_js_file(None, body=f"let thebeAddNewCell = '{translate('adds a new cell underneath')}';")
+    app.add_js_file(None, body=f"let thebeLaunchingBinder = '{translate('Launching from mybinder.org')}';")
+    app.add_js_file(None, body=f"let thebeLoadingCDN = '{translate('Loading thebe from CDN...')}';")
+    app.add_js_file(None, body=f"let thebeRun = '{translate('run')}';")
+    app.add_js_file(None, body=f"let thebeRunCell = '{translate('run this cell')}';")
+    app.add_js_file(None, body=f"let thebeRunAll = '{translate('run all')}';")
+    app.add_js_file(None, body=f"let thebeRunAllCells = '{translate('run all cells')}';")
+    app.add_js_file(None, body=f"let thebeRestartRun = '{translate('restart & run all')}';")
+    app.add_js_file(None, body=f"let thebeRestartRunCells = '{translate('restart the kernel and run all cells')}';")
+    app.add_js_file(None, body=f"let thebeLiveCode = '{translate('Live Code')}';")
+    app.add_js_file(None, body=f"let thebeLaunchThebe = '{translate('Launch Thebe')}';")
+
+    # Minimal i18n injection for CSS overrides
+    app.add_js_file(filename="sphinx-thebe-i18n.js")
 
     app.add_js_file(filename="refresh.js", loading_method="defer")
 
@@ -242,7 +273,7 @@ class ThebeButtonNode(nodes.Element):
     is enabled, the node is added at the bottom of the document.
     """
 
-    def __init__(self, rawsource="", *children, text="Run code", **attributes):
+    def __init__(self, rawsource="", *children, text=translate("Run code"), **attributes):
         super().__init__("", text=text)
 
     def html(self):
@@ -350,6 +381,12 @@ def copy_over_files(app, exception):
 
 
 def setup(app):
+
+     # add translations
+    package_dir = os.path.abspath(os.path.dirname(__file__))
+    locale_dir = os.path.join(package_dir, "translations", "locales")
+    app.add_message_catalog(MESSAGE_CATALOG_NAME, locale_dir)
+
     logger.verbose("Adding copy buttons to code blocks...")
     # Add our static path
     app.connect("builder-inited", st_static_path)

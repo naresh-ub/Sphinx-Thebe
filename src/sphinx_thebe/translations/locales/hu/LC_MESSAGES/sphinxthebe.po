@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "cella hozzáadása"
+
+msgid "adds a new cell underneath"
+msgstr "új cellát ad hozzá alul"
+
+msgid "clear"
+msgstr "törlés"
+
+msgid "clear the output of the cell"
+msgstr "cella kimenetének törlése"
+
+msgid "delete cell"
+msgstr "cella törlése"
+
+msgid "delete this cell"
+msgstr "ennek a cellának a törlése"
+
+msgid "Initializing Thebe"
+msgstr "Thebe inicializálása"
+
+msgid "Launching Pyodide kernel"
+msgstr "Pyodide kernel indítása"
+
+msgid "Launching from mybinder.org"
+msgstr "Indítás a mybinder.org-ból"
+
+msgid "Launch Thebe"
+msgstr "Thebe indítása"
+
+msgid "Live Code"
+msgstr "Élő Kód"
+
+msgid "Loading Thebe..."
+msgstr "Thebe betöltése..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "Thebe betöltése CDN-ből..."
+
+msgid "No results"
+msgstr "Nincs eredmény"
+
+msgid "Python interaction ready!"
+msgstr "Python interakció kész!"
+
+msgid "restart & run all"
+msgstr "újraindítás és mindent futtat"
+
+msgid "restart the kernel and run all cells"
+msgstr "kernel újraindítása és minden cella futtatása"
+
+msgid "run this cell"
+msgstr "ezt a cellát futtatni"
+
+msgid "run"
+msgstr "futtat"
+
+msgid "run all"
+msgstr "összes futtatása"
+
+msgid "run all cells"
+msgstr "minden cella futtatása"
+
+msgid "Run code"
+msgstr "Kód futtatása"
+
+msgid "Running pre-initialized cells..."
+msgstr "Előre inicializált cellák futtatása..."
+
+msgid "Waiting for packages to load..."
+msgstr "Csomagok betöltésére várakozás..."

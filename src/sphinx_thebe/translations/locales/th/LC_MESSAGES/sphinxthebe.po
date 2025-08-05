@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: th\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "เพิ่มเซลล์"
+
+msgid "adds a new cell underneath"
+msgstr "เพิ่มเซลล์ใหม่ด้านล่าง"
+
+msgid "clear"
+msgstr "ล้าง"
+
+msgid "clear the output of the cell"
+msgstr "ล้างเอาต์พุตของเซลล์"
+
+msgid "delete cell"
+msgstr "ลบเซลล์"
+
+msgid "delete this cell"
+msgstr "ลบเซลล์นี้"
+
+msgid "Initializing Thebe"
+msgstr "กำลังเริ่มต้น Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "กำลังเปิดใช้ kernel Pyodide"
+
+msgid "Launching from mybinder.org"
+msgstr "กำลังเปิดใช้จาก mybinder.org"
+
+msgid "Launch Thebe"
+msgstr "เปิด Thebe"
+
+msgid "Live Code"
+msgstr "โค้ดสด"
+
+msgid "Loading Thebe..."
+msgstr "กำลังโหลด Thebe..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "กำลังโหลด Thebe จาก CDN..."
+
+msgid "No results"
+msgstr "ไม่มีผลลัพธ์"
+
+msgid "Python interaction ready!"
+msgstr "การโต้ตอบ Python พร้อมแล้ว!"
+
+msgid "restart & run all"
+msgstr "รีสตาร์ทและรันทั้งหมด"
+
+msgid "restart the kernel and run all cells"
+msgstr "รีสตาร์ทเคอร์เนลและรันเซลล์ทั้งหมด"
+
+msgid "run this cell"
+msgstr "รันเซลล์นี้"
+
+msgid "run"
+msgstr "รัน"
+
+msgid "run all"
+msgstr "รันทั้งหมด"
+
+msgid "run all cells"
+msgstr "รันเซลล์ทั้งหมด"
+
+msgid "Run code"
+msgstr "รันโค้ด"
+
+msgid "Running pre-initialized cells..."
+msgstr "กำลังรันเซลล์ที่เตรียมไว้ล่วงหน้า..."
+
+msgid "Waiting for packages to load..."
+msgstr "รอให้แพ็กเกจโหลด..."

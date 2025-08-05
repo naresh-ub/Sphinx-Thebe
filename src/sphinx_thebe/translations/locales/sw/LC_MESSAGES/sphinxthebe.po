@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sw\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "ongeza seli"
+
+msgid "adds a new cell underneath"
+msgstr "inaongeza seli mpya chini"
+
+msgid "clear"
+msgstr "safisha"
+
+msgid "clear the output of the cell"
+msgstr "safisha matokeo ya seli"
+
+msgid "delete cell"
+msgstr "futa seli"
+
+msgid "delete this cell"
+msgstr "futa seli hii"
+
+msgid "Initializing Thebe"
+msgstr "Kuanzisha Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "Inazindua kiini cha Pyodide"
+
+msgid "Launching from mybinder.org"
+msgstr "Inazindua kutoka mybinder.org"
+
+msgid "Launch Thebe"
+msgstr "Zindua Thebe"
+
+msgid "Live Code"
+msgstr "Msimbo wa Moja kwa Moja"
+
+msgid "Loading Thebe..."
+msgstr "Inapakia Thebe..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "Inapakia Thebe kutoka CDN..."
+
+msgid "No results"
+msgstr "Hakuna matokeo"
+
+msgid "Python interaction ready!"
+msgstr "Mwingiliano wa Python uko tayari!"
+
+msgid "restart & run all"
+msgstr "anzisha upya na endesha zote"
+
+msgid "restart the kernel and run all cells"
+msgstr "anzisha upya kiini na endesha seli zote"
+
+msgid "run this cell"
+msgstr "endesha seli hii"
+
+msgid "run"
+msgstr "endesha"
+
+msgid "run all"
+msgstr "endesha zote"
+
+msgid "run all cells"
+msgstr "endesha seli zote"
+
+msgid "Run code"
+msgstr "Endesha msimbo"
+
+msgid "Running pre-initialized cells..."
+msgstr "Kuendesha seli zilizowekwa awali..."
+
+msgid "Waiting for packages to load..."
+msgstr "Inasubiri vifurushi vipakiwe..."

@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "hücre ekle"
+
+msgid "adds a new cell underneath"
+msgstr "altına yeni bir hücre ekler"
+
+msgid "clear"
+msgstr "temizle"
+
+msgid "clear the output of the cell"
+msgstr "hücrenin çıktısını temizle"
+
+msgid "delete cell"
+msgstr "hücreyi sil"
+
+msgid "delete this cell"
+msgstr "bu hücreyi sil"
+
+msgid "Initializing Thebe"
+msgstr "Thebe başlatılıyor"
+
+msgid "Launching Pyodide kernel"
+msgstr "Pyodide çekirdeği başlatılıyor"
+
+msgid "Launching from mybinder.org"
+msgstr "mybinder.org'dan başlatılıyor"
+
+msgid "Launch Thebe"
+msgstr "Thebe'yi Başlat"
+
+msgid "Live Code"
+msgstr "Canlı Kod"
+
+msgid "Loading Thebe..."
+msgstr "Thebe yükleniyor..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "Thebe CDN'den yükleniyor..."
+
+msgid "No results"
+msgstr "Sonuç yok"
+
+msgid "Python interaction ready!"
+msgstr "Python etkileşimi hazır!"
+
+msgid "restart & run all"
+msgstr "yeniden başlat ve hepsini çalıştır"
+
+msgid "restart the kernel and run all cells"
+msgstr "çekirdeği yeniden başlat ve tüm hücreleri çalıştır"
+
+msgid "run this cell"
+msgstr "bu hücreyi çalıştır"
+
+msgid "run"
+msgstr "çalıştır"
+
+msgid "run all"
+msgstr "hepsini çalıştır"
+
+msgid "run all cells"
+msgstr "tüm hücreleri çalıştır"
+
+msgid "Run code"
+msgstr "Kodu çalıştır"
+
+msgid "Running pre-initialized cells..."
+msgstr "Önceden başlatılmış hücreler çalıştırılıyor..."
+
+msgid "Waiting for packages to load..."
+msgstr "Paketlerin yüklenmesi bekleniyor..."

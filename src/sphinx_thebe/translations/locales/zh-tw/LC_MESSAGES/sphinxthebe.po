@@ -1,0 +1,81 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Thebe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-tw\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "add cell"
+msgstr "添加單元格"
+
+msgid "adds a new cell underneath"
+msgstr "在下方添加新單元格"
+
+msgid "clear"
+msgstr "清除"
+
+msgid "clear the output of the cell"
+msgstr "清除單元格的輸出"
+
+msgid "delete cell"
+msgstr "刪除單元格"
+
+msgid "delete this cell"
+msgstr "刪除此單元格"
+
+msgid "Initializing Thebe"
+msgstr "初始化 Thebe"
+
+msgid "Launching Pyodide kernel"
+msgstr "啟動 Pyodide 內核"
+
+msgid "Launching from mybinder.org"
+msgstr "從 mybinder.org 啟動"
+
+msgid "Launch Thebe"
+msgstr "啟動 Thebe"
+
+msgid "Live Code"
+msgstr "即時程式碼"
+
+msgid "Loading Thebe..."
+msgstr "正在載入 Thebe..."
+
+msgid "Loading Thebe from CDN..."
+msgstr "從 CDN 載入 Thebe..."
+
+msgid "No results"
+msgstr "無結果"
+
+msgid "Python interaction ready!"
+msgstr "Python 交互準備就緒！"
+
+msgid "restart & run all"
+msgstr "重新啟動並執行全部"
+
+msgid "restart the kernel and run all cells"
+msgstr "重新啟動核心並執行所有儲存格"
+
+msgid "run this cell"
+msgstr "執行此儲存格"
+
+msgid "run"
+msgstr "執行"
+
+msgid "run all"
+msgstr "執行全部"
+
+msgid "run all cells"
+msgstr "執行所有儲存格"
+
+msgid "Run code"
+msgstr "運行代碼"
+
+msgid "Running pre-initialized cells..."
+msgstr "正在運行預初始化單元格..."
+
+msgid "Waiting for packages to load..."
+msgstr "等待套件載入..."
