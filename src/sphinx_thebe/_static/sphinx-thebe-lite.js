@@ -202,6 +202,10 @@ var modifyDOMForThebe = () => {
     if (codeCellText) {
       codeCellText.setAttribute("data-language", dataLanguage);
       codeCellText.setAttribute("data-executable", "true");
+      // Modify each code cell, as execution by a user may not be linear. Patches: https://github.com/TeachBooks/TeachBooks-Sphinx-Thebe/issues/8
+      const extraLines = `# Start of injected lines\nimport matplotlib\nif not hasattr(matplotlib.RcParams, "_get"):\n    matplotlib.RcParams._get = dict.get\n# End of injected lines\n\n`;
+      codeCellText.textContent = extraLines + codeCellText.textContent;
+      console.log("Injected matplotlib fix into code cell", index);
     }
 
     // Remove sphinx-copybutton blocks, which are common in Sphinx
