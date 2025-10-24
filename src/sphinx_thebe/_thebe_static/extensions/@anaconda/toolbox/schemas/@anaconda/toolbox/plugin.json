@@ -1,0 +1,27 @@
+{
+  "title": "@anaconda/toolbox",
+  "description": "Anaconda integrations for cloud notebooks",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false,
+  "jupyter.lab.toolbars": {
+    "Cell": [
+      {
+        "name": "assistant:cell",
+        "command": "assistant:cell",
+        "rank": 10
+      },
+      {
+        "name": "codesnippet:cell",
+        "command": "codesnippet:cell",
+        "rank": 11
+      }
+    ],
+    "TopBar": [
+      {
+        "name": "topbar-toolbox-button",
+        "rank": 100
+      }
+    ]
+  }
+}
